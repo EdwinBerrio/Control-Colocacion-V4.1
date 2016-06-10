@@ -17,6 +17,12 @@
     <h1> prueba 1</h1>
     <h1> prueba 2</h1>
         <h1> el enchufado</h1>
+
+
+
+
+
+        <p>prueba 5000 schneider</p>
     </div>
     </form>
     </div>
