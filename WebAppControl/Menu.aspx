@@ -17,16 +17,14 @@
     <h1> prueba 1</h1>
     <h1> prueba 2</h1>
         <h1> el enchufado</h1>
-         
 
 
+        <h1> edwin</h1>
+        <h1> alex</h1>
 
-               
-        
-        
-        
-        
-         <h1> buenas los locos </h1>
+
+        <p>prueba 5000 schneider</p>
+        <p>prueba 5000 schneider2</p>
     </div>
     </form>
     </div>
