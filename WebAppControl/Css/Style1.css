@@ -1,0 +1,15 @@
+﻿body {
+      background-image: url(/Imagen/Pantalla_Inicial.png);
+     
+}
+#CajaLogin{
+    height: 212px;
+    width: 423px;
+    text-align:center;
+    border-style:double;
+    color:azure;
+    border-width:10px;
+    background-color:#0B0B3B;
+    margin-right:40%;
+    
+}
