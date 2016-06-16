@@ -40,6 +40,16 @@ header{
 
 }
 
+#caja1{
+    height:150px;
+    width:117px;
+    border:solid 2px #e4e4e4;
+    display: inline-block;
+    margin: 18px;
+    color:black;
+    
+}
+
 
 
 
