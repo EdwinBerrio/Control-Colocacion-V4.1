@@ -8,7 +8,7 @@
     <title></title>
      <%--Enlace a hoja de estilos--%>
     <link rel="stylesheet" href="css/StyleSLogin.css" type="text/css" />
-
+    <a href="InsertarUsuario.aspx">InsertarUsuario.aspx</a>
 </head>
 <body>
    

@@ -13,12 +13,12 @@
         <nav>
             <ul id="">
                 <li>Menu </li>
-                <li><a id ="A1" runat="server" href="~/InsertarUsuario.aspx">Registrar Usuario</a></li>
-                <li><a id ="A6" runat="server" href="~/InserProduccion.aspx">Registrar Produccion</a></li>
-                <li><a id ="A2" runat="server" href="~/InsertEquipoBombeo.aspx">Registrar Equipo Bombeo</a></li>
+                <li><a id ="A1" runat="server" href="/InsertarUsuario.aspx">Registrar Usuario</a></li>
+                <li><a id ="A6" runat="server" href="/InserProduccion.aspx">Registrar Produccion</a></li>
+                <li><a id ="A2" runat="server" href="/InsertEquipoBombeo.aspx">Registrar Equipo Bombeo</a></li>
        
-                <li><a id ="A3" runat="server" href="~/MostrarUsuario.aspx">Usuarios Registrados</a></li>
-                <li><a id ="A4" runat="server" href="~/MostrarProduccion.aspx">Produccion</a></li>
+                <li><a id ="A3" runat="server" href="/MostrarUsuario.aspx">Usuarios Registrados</a></li>
+                <li><a id ="A4" runat="server" href="/MostrarProduccion.aspx">Produccion</a></li>
                 <li>Equipos de Bombeo</li>
             </ul>
         </nav>
