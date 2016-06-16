@@ -1,8 +1,8 @@
 ﻿body {
-      background-image: url(/Imagen/Pantalla_Inicial.png);
+      /*background-image: url(/Imagen/Pantalla_Inicial.png);*/
      
 }
-#CajaLogin{
+#Login{
     height: 212px;
     width: 423px;
     text-align:center;
@@ -12,4 +12,8 @@
     background-color:#0B0B3B;
     margin-right:40%;
     
+}
+#bombeo{
+    font-size:arial;
+    background:blue;
 }
