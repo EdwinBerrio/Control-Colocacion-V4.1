@@ -102,6 +102,7 @@
     <Content Include="Css\Style1.css" />
     <Content Include="Css\StyleSLogin.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="index.aspx" />
     <Content Include="InserProduccion.aspx" />
     <Content Include="InsertarUsuario.aspx" />
     <Content Include="InsertEquipoBombeo.aspx" />
@@ -123,6 +124,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\controlcolocaciondemezclas - Web Deploy.pubxml" />
     <None Include="scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
@@ -144,6 +146,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="InserProduccion.aspx.cs">
       <DependentUpon>InserProduccion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
