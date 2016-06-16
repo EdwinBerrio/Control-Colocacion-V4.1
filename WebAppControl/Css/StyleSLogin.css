@@ -1,70 +1,52 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 body{
-    /*background-image: url(/Imagen/Pantalla_Inicial.png);*/
+    background-image: url(/Imagen/Pantalla_Inicial.png);
+    text-align:center;
+    font:bold 15px "trebuchet MS";
     
 }
-
-#menu li{
-    margin:0;
-    padding:0;
-    list-style:none;
-
-}
-
-#menu li a{
-    width:120px;
-    height:60px;
-    display:block;
-    background:url(#)no-repeat;
-    background:linear-gradient(top,#00ffff,#00ffff);
-    background:-moz-linear-gradient(top,#ffd800,#808080);
-    background:-o-linear-gradient(top,#000000,#4cff00);
-    background:-ms-linear-gradient(top,#00ffff,#b200ff);
-    background:-webkit-linear-gradient(top,#00ffff,#0094ff);
-    border-radius:6px;
-    float:left;
-    font-family:"Trebuchet MS",Arial,Helvetica.sans-serif;
-    font-size:15px;
+/*barra de menu*/
+h1
+{
     color:black;
-    text-align:center;
+}
+
+nav#menu ul li
+{
+    background:#0094ff;
+    border-radius:0.3em;
+    display:inline-block;
+    padding: 0.5em 1em;
+
+}
+
+nav#menu ul li a
+{
+    color:black;
     text-decoration:none;
-    margin-right:15px;
-    padding-top:5px;
-    position:relative;
-    transition:transform 0.2s;
-   ;
-
 
 }
 
-#menu li a:hover{
-    transform:scale(1.1,1.1);
-    -moz-transform:scale(1.1,1.1);
-    -ms-transform:scale(1.1,1.1);
-    -webkit-transform:scale(1.1,1.1);
+nav#menu ul li:hover
+{
+background:white;
+}
+
+header{
+    margin:100px auto;
+    width:1200px;
+    height:230px;
+    background-color:transparent;
+
 }
 
 
-div#Usuario{
-    width:54px;
-    height:54px;
-    display:block;
-    background:url (../Imagen/Usuario.png") no-repeat;
-    /*background-image: url(../Imagen/Usuario.png) no-repeat;*/
-    position:absolute;
-    left:48px;
-    top:20px;
-}
 
-#menu li a #Pantalla{
-    width:54px;
-    height:54px;
-    display:block;
-    background:url (../Imagen/Pantalla.png");no-repeat;
-    position:absolute;
-    left:48px;
-    top:20px;
-}
 
-/*insertar usuario*/
+
+
+
+
+
+
 

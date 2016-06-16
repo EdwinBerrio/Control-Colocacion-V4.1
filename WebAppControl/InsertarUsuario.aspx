@@ -12,14 +12,16 @@
     <header>
          <h1><center>Registro de Usuarios</h1>
         <nav id="menu">
-            <ul id="">
-                <li><a id ="A6" runat="server" href="/Index.aspx">Menu Principal</a></li>
+            <ul>
+                <li><a id ="A6" runat="server" >Menu Principal</a></li>
                                
                 
                                 <li><a id ="A1" runat="server" href="/InsertarUsuario.aspx">Registrar Usuario</a></li>
                                 
+                                
                 
-                                <li><a id ="A7" runat="server" href="/InsertEquipoBombeo.aspx">Inserta Produccion</a></li>
+                
+                <li><a id ="A7" runat="server" href="/InsertEquipoBombeo.aspx">Inserta Produccion</a></li>
                                 
                
                                  <li><a id ="A2" runat="server" href="/InsertEquipoBombeo.aspx">Registrar Equipo Bombeo</a></li>
@@ -31,7 +33,10 @@
                                 <li><a id ="A4" runat="server" href="/MostrarProduccion.aspx">Produccion</a></li>
                                 
                                 <li><a id ="A5" runat="server" href="/MostrarEquipoBomb.aspx">Equipos de Bombeo</a></li>
-            </ul>
+            </ul>                
+                                    
+                
+                                
         </nav>
     </header><br ><br ><br > <br >   
    
