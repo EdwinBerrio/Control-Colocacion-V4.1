@@ -91,7 +91,13 @@
                                  <asp:Label ID="label5" runat="server" Text="Cargo Empleado"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox ID="TextCargoEmpleado" runat ="server"></asp:TextBox>
+                                <asp:DropDownList ID="TextCargoEmpleado" runat="server" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged">
+                                    <asp:ListItem Text="OPE. AUTOBOMBA" Value="10001" />
+                                    <asp:ListItem Text="OPE. ESTACIONARIA" Value="10002" />
+                                    <asp:ListItem Text="AUXILIAR  BOMBA" Value="10003" />
+                                    <asp:ListItem Text="ADMINISTRADOR" Value="10004" />
+                                </asp:DropDownList>
+                                
                             </td>
                         </tr>
                         <tr>
