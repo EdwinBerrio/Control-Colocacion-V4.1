@@ -64,7 +64,12 @@
                     <h4><asp:Label ID="label4" runat="server" Text="Tipo de Bomba"></asp:Label></h4>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextTipoBomba" runat="server" Height="17px" Width="148px"></asp:TextBox>
+                    
+                    <asp:DropDownList ID="TextTipoBomba" runat="server" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged">
+                       <asp:ListItem Text="AUTOBOMBA" Value="1001" />
+                       <asp:ListItem Text="ESTACIONARIA TIRO" Value="1002" />
+                       <asp:ListItem Text="ESTACIONARIA MONTADA" Value="1003" />           
+                   </asp:DropDownList>
                 </td>
             </tr>
             
