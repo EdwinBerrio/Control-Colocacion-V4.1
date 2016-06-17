@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="css/StyleSLogin.css" type="text/css" />
-    <title></title>
+    <title>Insertar Usuario</title>
 </head>
 <body>
     <header>
@@ -38,7 +38,7 @@
                 
                                 
         </nav>
-    </header><br ><br ><br > <br >   
+    </header> 
    
     
     <form id="form1" runat="server">

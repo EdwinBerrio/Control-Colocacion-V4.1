@@ -1,14 +1,16 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 body{
-    background-image: url(/Imagen/Pantalla_Inicial.png);
+    background-image: url(/Imagen/Inicial.png);
+
     text-align:center;
-    font:bold 15px "trebuchet MS";
+   
     
 }
 /*barra de menu*/
 h1
 {
     color:black;
+
 }
 
 nav#menu ul li
@@ -35,17 +37,17 @@ background:white;
 header{
     margin:100px auto;
     width:1200px;
-    height:230px;
+    height:500px;
     background-color:transparent;
 
 }
 
 #caja1{
-    height:150px;
-    width:117px;
+    height:170px;
+    width:114px;
     border:solid 2px #e4e4e4;
     display: inline-block;
-    margin: 18px;
+    margin: 20px;
     color:black;
     
 }
