@@ -47,5 +47,11 @@ namespace WebAppControl
 
         }
 
+        protected void TextCargoEmpleado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+
+
+        }
     }
 }
