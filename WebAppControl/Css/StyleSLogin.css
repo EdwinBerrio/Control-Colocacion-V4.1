@@ -1,6 +1,9 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 body{
-    background-image: url(/Imagen/Inicial.png);
+    /*background-image: url(/Imagen/Inicial.png);*/
+    width:px;
+    height:40px;
+
 
     text-align:center;
    
@@ -37,8 +40,8 @@ background:white;
 header{
     margin:100px auto;
     width:1200px;
-    height:500px;
-    background-color:transparent;
+    height:40px;
+    background-color:beige;
 
 }
 
@@ -51,14 +54,65 @@ header{
     color:black;
     
 }
+/*contenedor fomrmulario*/
+#cajamenu{
+     background:;
+    font-style:italic;
+    font-family:Verdana;
+}
 
+.auto-style2{
+    background:#A9CCE3  ;
+    border-color:green;
+}
 
+table {
+    border-style:double;
 
+}
 
+/*insertEquipoBombeo*/
 
-
-
-
-
-
-
+ /*<style type="text/css">*/
+        .auto-style3 {
+            height: 6px;
+        }
+        .auto-style4 {
+            background: #A9CCE3;
+            border-color: green;
+            height: 23px;
+        }
+        .auto-style5 {
+            height: 23px;
+            width: 210px;
+        }
+        .auto-style6 {
+            background: #A9CCE3;
+            border-color: green;
+            height: 19px;
+        }
+        .auto-style7 {
+            height: 19px;
+            width: 210px;
+        }
+        .auto-style9 {
+            width: 210px;
+        }
+        .auto-style10 {
+            height: 6px;
+            width: 210px;
+        }
+        .auto-style11 {
+            width: 308px;
+            height: 95px;
+        }
+        .auto-style12 {
+            background: #A9CCE3;
+            border-color: green;
+            height: 12px;
+        }
+        .auto-style13 {
+            height: 12px;
+            width: 10px;
+        }
+   

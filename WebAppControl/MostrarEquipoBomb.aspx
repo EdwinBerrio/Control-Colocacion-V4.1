@@ -6,12 +6,12 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="css/StyleSLogin.css" type="text/css" />
-    <title></title>
+    <title>Mostrar Equipo de Bombeo</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul id="">
+        <nav id="menu">
+            <ul>
                 <li>Menu </li>
                 <li><a id ="A1" runat="server" href="/InsertarUsuario.aspx">Registrar Usuario</a></li>
                 <li><a id ="A6" runat="server" href="/InserProduccion.aspx">Registrar Produccion</a></li>

@@ -9,6 +9,8 @@
     <title>Insertar Usuario</title>
 </head>
 <body>
+   
+    
     <header>
          <h1><center>Registro de Usuarios</h1>
         <nav id="menu">
@@ -16,29 +18,29 @@
                 <li><a id ="A6" runat="server" >Menu Principal</a></li>
                                
                 
-                                <li><a id ="A1" runat="server" href="/InsertarUsuario.aspx">Registrar Usuario</a></li>
+                <li><a id ="A1" runat="server" href="/InsertarUsuario.aspx">Registrar Usuario</a></li>
                                 
-                                
-                
-                
-                <li><a id ="A7" runat="server" href="/InsertEquipoBombeo.aspx">Inserta Produccion</a></li>
+                 <li><a id ="A7" runat="server" href="/InsertEquipoBombeo.aspx">Inserta Produccion</a></li>
                                 
                
-                                 <li><a id ="A2" runat="server" href="/InsertEquipoBombeo.aspx">Registrar Equipo Bombeo</a></li>
+                 <li><a id ="A2" runat="server" href="/InsertEquipoBombeo.aspx">Registrar Equipo Bombeo</a></li>
                                 
                 
-                                <li><a id ="A3" runat="server" href="/MostrarUsuario.aspx">Usuarios Registrados</a></li>
+                 <li><a id ="A3" runat="server" href="/MostrarUsuario.aspx">Usuarios Registrados</a></li>
                                 
                 
-                                <li><a id ="A4" runat="server" href="/MostrarProduccion.aspx">Produccion</a></li>
+                 <li><a id ="A4" runat="server" href="/MostrarProduccion.aspx">Produccion</a></li>
                                 
-                                <li><a id ="A5" runat="server" href="/MostrarEquipoBomb.aspx">Equipos de Bombeo</a></li>
+                 <li><a id ="A5" runat="server" href="/MostrarEquipoBomb.aspx">Equipos de Bombeo</a></li>
             </ul>                
                                     
                 
                                 
         </nav>
-    </header> 
+    </header>                 
+                
+                
+               
    
     
     <form id="form1" runat="server">
@@ -46,13 +48,13 @@
         
         
         <div>
-             <h1>Registro de Usuarios</h1>
+             
        
         
                 <table>
                         <%--caja para los datos--%>
                         <tr>
-                            <td>
+                             <td class="auto-style2">
                                 <asp:Label ID="label1" runat="server" Text="N° Identificacion"></asp:Label>
                             </td>
                             <td>
@@ -73,7 +75,7 @@
                                <asp:Label ID="label3" runat="server" Text="Nombres"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox ID="TextNombres" runat ="server"></asp:TextBox>
+                                <asp:TextBox ID="TextNombres" runat ="server" OnTextChanged="TextNombres_TextChanged"></asp:TextBox>
                             </td>
                         </tr>
             

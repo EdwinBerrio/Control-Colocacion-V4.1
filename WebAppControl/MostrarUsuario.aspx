@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul id="">
+        <nav id="menu">
+            <ul>
                 <li>Menu </li>
                 <li><a id ="A1" runat="server" href="/InsertarUsuario.aspx">Registrar Usuario</a></li>
                 <li><a id ="A6" runat="server" href="/InserProduccion.aspx">Registrar Produccion</a></li>

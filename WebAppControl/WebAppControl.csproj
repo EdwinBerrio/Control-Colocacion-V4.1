@@ -107,7 +107,6 @@
     <Content Include="InsertarUsuario.aspx" />
     <Content Include="InsertEquipoBombeo.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="menu.aspx" />
     <Content Include="MostrarEquipoBomb.aspx" />
     <Content Include="MostrarProduccion.aspx" />
     <Content Include="MostrarUsuario.aspx" />
@@ -180,13 +179,6 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="menu.aspx.cs">
-      <DependentUpon>menu.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="menu.aspx.designer.cs">
-      <DependentUpon>menu.aspx</DependentUpon>
     </Compile>
     <Compile Include="MostrarEquipoBomb.aspx.cs">
       <DependentUpon>MostrarEquipoBomb.aspx</DependentUpon>
