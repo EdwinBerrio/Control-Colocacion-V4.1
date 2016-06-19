@@ -1,11 +1,7 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 body{
-    /*background-image: url(/Imagen/Inicial.png);*/
-    width:px;
-    height:40px;
-
-
-    text-align:center;
+   background-image: url(/Imagen/Pantalla1.png);
+   text-align:center;
    
     
 }
@@ -14,6 +10,12 @@ h1
 {
     color:black;
 
+}
+
+#title{
+    position:center;
+    color:black;
+    font:oblique bold 200% cursive;
 }
 
 nav#menu ul li
@@ -37,14 +39,17 @@ nav#menu ul li:hover
 background:white;
 }
 
+
 header{
     margin:100px auto;
     width:1200px;
-    height:40px;
-    background-color:beige;
+    height:140px;
+    
 
 }
 
+
+/*caja de las imagenes del menu*/
 #caja1{
     height:170px;
     width:114px;
@@ -56,18 +61,20 @@ header{
 }
 /*contenedor fomrmulario*/
 #cajamenu{
-     background:;
+     background:#B9C5C2;
     font-style:italic;
     font-family:Verdana;
 }
 
 .auto-style2{
-    background:#A9CCE3  ;
+    background:#0094ff  ;
     border-color:green;
 }
 
 table {
     border-style:double;
+    width:30%;
+    background:#0094ff;
 
 }
 

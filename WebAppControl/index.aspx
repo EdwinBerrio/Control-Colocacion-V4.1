@@ -5,15 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
- <%--   <link rel="stylesheet" href="css/StyleSLogin.css" type="text/css" />--%>
-    <title>Index</title>
+    <link rel="stylesheet" href="css/StyleSLogin.css" type="text/css" >
+    <title>Menu</title>
 </head>
 <body>
     
-    <header>
-
-        <h1><a id="title">Control Colocación Mesclaz</a></h1><br ><br >
-
+    
+     <header>
+         <h1 id="title">Control Colocación Mesclaz</h1>  <br > <br ><br > <br >
+       
+       
+      
         <nav id="menu">
             <ul>
                         <div id="caja1">      
@@ -56,21 +58,7 @@
             
         </nav>          
             
-
-         
-                 
-            
-                    
-                                    
-                
-                                
-        
-              
-
-              
-        
-           
-                          
+                        
     </header>
     <form id="form1" runat="server">
     <div>

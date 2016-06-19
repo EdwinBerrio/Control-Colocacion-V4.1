@@ -9,6 +9,29 @@
     <title>Producción de Equipo</title>
 </head>
 <body>
+
+    <header>
+         <h1 id="title">Registro de Equipo Bombeo</h1><br ><br ><br ><br >
+        
+        <nav id="menu">
+            <ul >
+                <%--<li>Menu </li>--%>
+                <li><a id ="A1" runat="server" href="~/InsertarUsuario.aspx">Registrar Usuario</a></li>
+                
+                <li><a id ="A6" runat="server" href="~/InserProduccion.aspx">Registrar Produccion</a></li>
+                
+                               
+                <%--<li>Registrar Equipo Bombeo</li>--%>
+                
+                 <li><a id ="A3" runat="server" href="~/MostrarUsuario.aspx">Usuarios Registrados</a></li>
+                <li><a id ="A4" runat="server" href="~/MostrarProduccion.aspx">Producción</a></li>
+                <li><a id ="A5" runat="server" href="~/MostrarEquipoBomb.aspx">Equipos de Bombeo</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    
+    
     <form id="form1" runat="server">
     <div>
     <h1>Produccion Por Equipo</h1>
@@ -97,8 +120,8 @@
             <tr>
                 <td class="auto-style2">&nbsp;</td>
                 <td>
-                    <asp:Button ID="BtnBuscar" runat="server" Text="Consultar" OnClick="BtnGuardar_Click" />
-                    <asp:Button ID="BtnCancelar" runat="server" Text="Cancelar" OnClick="BtnCancelar_Click" />
+                    <%--<asp:Button ID="BtnBuscar" runat="server" Text="Consultar" OnClick="BtnGuardar_Click" />--%>
+                    <%--<asp:Button ID="BtnCancelar" runat="server" Text="Cancelar" OnClick="BtnCancelar_Click" />--%>
                 </td>
             </tr>
         </table>

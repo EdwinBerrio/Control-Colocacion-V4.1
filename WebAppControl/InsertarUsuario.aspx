@@ -12,7 +12,7 @@
    
     
     <header>
-         <h1><center>Registro de Usuarios</h1>
+         <h1 id="title">Registro de Usuarios</h1><br ><br ><br ><br >
         <nav id="menu">
             <ul>
                 <li><a id ="A6" runat="server" >Menu Principal</a></li>
@@ -75,7 +75,7 @@
                                <asp:Label ID="label3" runat="server" Text="Nombres"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox ID="TextNombres" runat ="server" OnTextChanged="TextNombres_TextChanged"></asp:TextBox>
+<%--                                <asp:TextBox ID="TextNombres" runat ="server" OnTextChanged="TextNombres_TextChanged" Height="19px" Width="120px"></asp:TextBox>--%>
                             </td>
                         </tr>
             

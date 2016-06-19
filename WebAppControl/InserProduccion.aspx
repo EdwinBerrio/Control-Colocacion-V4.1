@@ -13,11 +13,11 @@
         
     
                 <header>
-                          <h1>Registro Servicio Bombeo</h1>
+                          <h1 id="title">Registro Servicio Bombeo</h1> <br ><br ><br ><br >
 
                     <div>
 
-
+                    
                     <nav id="menu">
                                     <ul>
                                             <li><a id ="A6" runat="server" href="/Index.aspx">Menu Principal</a></li>
@@ -47,7 +47,7 @@
                   
       
            <div id="cajamenu">
-                 <table>
+                 <table border="1">
             
                         <%--caja para los datos--%>
             
@@ -151,7 +151,9 @@
                         <tr>
                             <td class="auto-style1">&nbsp;</td>
                             <td>
-                                <asp:Button ID="BtnGuardar" runat="server" Text="Guardar" OnClick="BtnGuardar_Click" />
+                                <asp:Button ID="BtnGuardar" runat="server" Text="Guardar" OnClick="BtnGuardar_Click"  />
+
+                                
                                 <asp:Button ID="BtnCancelar" runat="server" Text="Cancelar" OnClick="BtnCancelar_Click" />
                             </td>
                         </tr>

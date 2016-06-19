@@ -130,15 +130,6 @@ namespace WebAppControl {
         protected global::System.Web.UI.WebControls.Label label3;
         
         /// <summary>
-        /// Control TextNombres.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextNombres;
-        
-        /// <summary>
         /// Control label4.
         /// </summary>
         /// <remarks>
