@@ -42,7 +42,16 @@ namespace WebAppControl
 
         protected void BtnCancelar_Click(object sender, EventArgs e)
         {
-
+            TextIdReporte.Text = "";
+            TextIdOperario.Text = "";
+            TextFechaServicio.Text = "";
+            TextCodigoBomba.SelectedIndex = 0;
+            TextNombreObra.Text = "";
+            TextNumeroPedido.Text = "";
+            TextMetrosColocados.Text = "";
+            TextHoraInicio.Text = "";
+            TextHoraFin.Text = "";
+            TextFechaFinal.Text = "";
         }
 
         protected void TextCodigoBomba_SelectedIndexChanged(object sender, EventArgs e)
@@ -53,6 +62,11 @@ namespace WebAppControl
         protected void TextCargoEmpleado_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/InsertarUsuario.aspx");
         }
     }
 }

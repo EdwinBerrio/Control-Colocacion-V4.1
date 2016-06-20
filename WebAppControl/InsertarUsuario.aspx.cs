@@ -44,7 +44,14 @@ namespace WebAppControl
 
         protected void BtnCancelar_Click(object sender, EventArgs e)
         {
-
+            TextIdCodigo.Text = "";
+            TextApellidos.Text = "";
+            TextNombres.Text = "";
+            TextFechaNacimiento.Text = "";
+            TextCargoEmpleado.SelectedIndex = 0;
+            TextNumeroTelefono.Text = "";
+            TextEmail.Text = "";
+            
         }
 
         protected void TextCargoEmpleado_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,6 +59,10 @@ namespace WebAppControl
             
 
 
+        }
+        protected void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Login.aspx");
         }
     }
 }
