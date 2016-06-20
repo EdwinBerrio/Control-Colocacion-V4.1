@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="css/StyleSLogin.css" type="text/css" />
-    <title>Servicios Por Usuario</title>
+    <title></title>
 </head>
 <body>
      <form id="form2" runat="server">

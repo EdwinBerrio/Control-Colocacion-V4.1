@@ -6,41 +6,39 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="css/StyleSLogin.css" type="text/css" />
-    <title>Insertar Usuario</title>
+    <title></title>
 </head>
 <body>
-   
-    
     <header>
-         <h1 id="title">Registro de Usuarios</h1><br ><br ><br ><br >
+         <h1><center>Registro de Usuarios</h1>
         <nav id="menu">
             <ul>
                 <li><a id ="A6" runat="server" >Menu Principal</a></li>
                                
                 
-                <li><a id ="A1" runat="server" href="/InsertarUsuario.aspx">Registrar Usuario</a></li>
+                                <li><a id ="A1" runat="server" href="/InsertarUsuario.aspx">Registrar Usuario</a></li>
                                 
-                 <li><a id ="A7" runat="server" href="/InsertEquipoBombeo.aspx">Inserta Produccion</a></li>
+                                
+                
+                
+                <li><a id ="A7" runat="server" href="/InsertEquipoBombeo.aspx">Inserta Produccion</a></li>
                                 
                
-                 <li><a id ="A2" runat="server" href="/InsertEquipoBombeo.aspx">Registrar Equipo Bombeo</a></li>
+                                 <li><a id ="A2" runat="server" href="/InsertEquipoBombeo.aspx">Registrar Equipo Bombeo</a></li>
                                 
                 
-                 <li><a id ="A3" runat="server" href="/MostrarUsuario.aspx">Usuarios Registrados</a></li>
+                                <li><a id ="A3" runat="server" href="/MostrarUsuario.aspx">Usuarios Registrados</a></li>
                                 
                 
-                 <li><a id ="A4" runat="server" href="/MostrarProduccion.aspx">Produccion</a></li>
+                                <li><a id ="A4" runat="server" href="/MostrarProduccion.aspx">Produccion</a></li>
                                 
-                 <li><a id ="A5" runat="server" href="/MostrarEquipoBomb.aspx">Equipos de Bombeo</a></li>
+                                <li><a id ="A5" runat="server" href="/MostrarEquipoBomb.aspx">Equipos de Bombeo</a></li>
             </ul>                
                                     
                 
                                 
         </nav>
-    </header>                 
-                
-                
-               
+    </header><br ><br ><br > <br >   
    
     
     <form id="form1" runat="server">
@@ -48,13 +46,13 @@
         
         
         <div>
-             
+             <h1>Registro de Usuarios</h1>
        
         
                 <table>
                         <%--caja para los datos--%>
                         <tr>
-                             <td class="auto-style2">
+                            <td>
                                 <asp:Label ID="label1" runat="server" Text="N° Identificacion"></asp:Label>
                             </td>
                             <td>
@@ -75,7 +73,7 @@
                                <asp:Label ID="label3" runat="server" Text="Nombres"></asp:Label>
                             </td>
                             <td>
-<%--                                <asp:TextBox ID="TextNombres" runat ="server" OnTextChanged="TextNombres_TextChanged" Height="19px" Width="120px"></asp:TextBox>--%>
+                                <asp:TextBox ID="TextNombres" runat ="server"></asp:TextBox>
                             </td>
                         </tr>
             
@@ -94,6 +92,7 @@
                             </td>
                             <td>
                                 <asp:DropDownList ID="TextCargoEmpleado" runat="server" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged">
+                                    <asp:ListItem Text=" " Value=" " />
                                     <asp:ListItem Text="OPE. AUTOBOMBA" Value="10001" />
                                     <asp:ListItem Text="OPE. ESTACIONARIA" Value="10002" />
                                     <asp:ListItem Text="AUXILIAR  BOMBA" Value="10003" />

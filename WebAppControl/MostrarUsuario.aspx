@@ -6,14 +6,12 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="css/StyleSLogin.css" type="text/css" />
-    <title>Mostrar Usuario</title>
+    <title></title>
 </head>
 <body>
     <header>
-          <h1 id="title">Usuarios Inscritos</h1>
-        <br /><br /><br />
-        <nav id="menu">
-            <ul>
+        <nav>
+            <ul id="">
                 <li>Menu </li>
                 <li><a id ="A1" runat="server" href="/InsertarUsuario.aspx">Registrar Usuario</a></li>
                 <li><a id ="A6" runat="server" href="/InserProduccion.aspx">Registrar Produccion</a></li>
@@ -27,7 +25,7 @@
     </header>
     <form id="form1" runat="server">
     <div>
-      
+        <h1>Usuarios Inscritos</h1>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
             <Columns>
                 <asp:BoundField DataField="IdCodigo" HeaderText="Identificacion" />

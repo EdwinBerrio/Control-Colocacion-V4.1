@@ -1,21 +1,14 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 body{
-   background-image: url(/Imagen/Pantalla1.png);
-   text-align:center;
-   
+    background-image: url(/Imagen/Pantalla_Inicial.png);
+    text-align:center;
+    font:bold 15px "trebuchet MS";
     
 }
 /*barra de menu*/
 h1
 {
     color:black;
-
-}
-
-#title{
-    position:center;
-    color:black;
-    font:oblique bold 200% cursive;
 }
 
 nav#menu ul li
@@ -39,87 +32,31 @@ nav#menu ul li:hover
 background:white;
 }
 
-
 header{
     margin:100px auto;
     width:1200px;
-    height:140px;
-    
+    height:230px;
+    background-color:transparent;
 
 }
 
-
-/*caja de las imagenes del menu*/
 #caja1{
-    height:170px;
-    width:114px;
+    height:150px;
+    width:117px;
     border:solid 2px #e4e4e4;
     display: inline-block;
-    margin: 20px;
+    margin: 18px;
     color:black;
     
 }
-/*contenedor fomrmulario*/
-#cajamenu{
-     background:#B9C5C2;
-    font-style:italic;
-    font-family:Verdana;
-}
 
-.auto-style2{
-    background:#0094ff  ;
-    border-color:green;
-}
 
-table {
-    border-style:double;
-    width:30%;
-    background:#0094ff;
 
-}
 
-/*insertEquipoBombeo*/
 
- /*<style type="text/css">*/
-        .auto-style3 {
-            height: 6px;
-        }
-        .auto-style4 {
-            background: #A9CCE3;
-            border-color: green;
-            height: 23px;
-        }
-        .auto-style5 {
-            height: 23px;
-            width: 210px;
-        }
-        .auto-style6 {
-            background: #A9CCE3;
-            border-color: green;
-            height: 19px;
-        }
-        .auto-style7 {
-            height: 19px;
-            width: 210px;
-        }
-        .auto-style9 {
-            width: 210px;
-        }
-        .auto-style10 {
-            height: 6px;
-            width: 210px;
-        }
-        .auto-style11 {
-            width: 308px;
-            height: 95px;
-        }
-        .auto-style12 {
-            background: #A9CCE3;
-            border-color: green;
-            height: 12px;
-        }
-        .auto-style13 {
-            height: 12px;
-            width: 10px;
-        }
-   
+
+
+
+
+
+

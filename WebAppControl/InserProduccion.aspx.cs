@@ -44,5 +44,15 @@ namespace WebAppControl
         {
 
         }
+
+        protected void TextCodigoBomba_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextCargoEmpleado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
