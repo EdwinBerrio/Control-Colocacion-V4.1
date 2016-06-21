@@ -13,7 +13,11 @@
     
     <header>
 
-            <nav id="menu">
+       
+        <h1><a id="title">Registro Servicio Bombeo</a></h1><br ><br ><br ><br ><br >
+        
+        <nav id="menu"><br ><br ><br ><br ><br >
+                    
                         <ul>
                                 <li><a id ="A6" runat="server" href="/Index.aspx">Menu Principal</a></li>
                                 
