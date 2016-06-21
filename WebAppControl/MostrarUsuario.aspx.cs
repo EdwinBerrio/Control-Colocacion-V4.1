@@ -30,6 +30,10 @@ namespace WebAppControl
             // DataBind refrescar o actualizar datos..
         }
 
+        protected void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/index.aspx");
+        }
     }
 
 }

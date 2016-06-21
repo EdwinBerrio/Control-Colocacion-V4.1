@@ -37,6 +37,12 @@
                 <asp:BoundField DataField="Email" HeaderText="Email" />
             </Columns>
         </asp:GridView>
+        <tr>
+            <td class="auto-style2">&nbsp;</td>
+              <td>
+                <asp:Button ID="BtnSalir" runat="server" Text="Salir" OnClick="BtnSalir_Click" OnClientClick="return confirm('¿Esta seguro que desea salir de la pagina Registrar Usuario?');"  Height="22px" Width="62px" />
+              </td>
+         </tr>
     </div>
     </form>
 </body>

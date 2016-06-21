@@ -115,7 +115,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ProduccionEquipo.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -208,13 +207,6 @@
     </Compile>
     <Compile Include="MostrarUsuario.aspx.designer.cs">
       <DependentUpon>MostrarUsuario.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ProduccionEquipo.aspx.cs">
-      <DependentUpon>ProduccionEquipo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ProduccionEquipo.aspx.designer.cs">
-      <DependentUpon>ProduccionEquipo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicioXUsuario.aspx.cs">
