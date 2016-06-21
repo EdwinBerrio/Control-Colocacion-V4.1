@@ -88,9 +88,11 @@
             <tr>
                 <td class="auto-style2">&nbsp;</td>
                 <td>
-                    <asp:Button ID="BtnCancelar" runat="server" Text="Cancelar" OnClick="BtnCancelar_Click" Height="23px" Width="60px" /><br />
+                   
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="BtnGuardar" runat="server" Text="Guardar" OnClick="BtnGuardar_Click" Height="22px" Width="62px" />
+                     <asp:Button ID="BtnGuardar" runat="server" Text="Guardar" OnClick="BtnGuardar_Click" Height="22px" Width="62px" />
+                    <asp:Button ID="Button1" runat="server" Text="Cancelar" OnClick="BtnCancelar_Click" Height="22px" Width="62px"  OnClientClick="return confirm('¿Esta seguro que no desea guardar el registro ?');"/>
+                    <asp:Button ID="BtnSalir" runat="server" Text="Salir" OnClick="BtnSalir_Click" Height="22px" Width="62px" OnClientClick="return confirm('¿Esta seguro que desea salir de la pagina Insertar Equipo de bombeo?');"/>
                 </td>
             </tr>
         </table>

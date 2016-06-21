@@ -41,12 +41,21 @@ namespace WebAppControl
 
         protected void BtnCancelar_Click(object sender, EventArgs e)
         {
-
+            TextCodigoBomba.Text = "";
+            TextMarca.Text = "";
+            TextModelo.Text = "";
+            TextTipoBomba.SelectedIndex = 0;
+            TextAlcance.Text = "";
         }
 
         protected void TextCargoEmpleado_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/index.aspx");
         }
     }
 }

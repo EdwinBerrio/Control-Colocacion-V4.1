@@ -62,7 +62,7 @@ namespace WebAppControl
         }
         protected void BtnSalir_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Login.aspx");
+            Response.Redirect("/index.aspx");
         }
     }
 }

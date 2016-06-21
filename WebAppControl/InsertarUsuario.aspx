@@ -85,7 +85,7 @@
                                 <asp:TextBox ID="TextFechaNacimiento" runat="server" TextMode="Date"></asp:TextBox>
                             </td>
                         </tr>
-            
+            >
                         <tr>
                             <td class="auto-style2">
                                  <asp:Label ID="label5" runat="server" Text="Cargo Empleado"></asp:Label>
@@ -120,9 +120,9 @@
                         <tr>
                             <td class="auto-style2">&nbsp;</td>
                             <td>
-                                <asp:Button ID="BtnGuardar" runat="server" Text="Guardar" OnClick="BtnGuardar_Click" />
-                                <asp:Button ID="BtnCancelar" runat="server" Text="Cancelar" OnClick="BtnCancelar_Click" OnClientClick="return confirm('¿Esta seguro que desea salir de la pagina Registrar Usuario?');"/>
-                                 <asp:Button ID="BtnSalir" runat="server" Text="Salir" OnClick="BtnSalir_Click" OnClientClick="return confirm('¿Esta seguro que desea salir de la pagina Registrar Usuario?');"/>
+                                <asp:Button ID="BtnGuardar" runat="server" Text="Guardar" OnClick="BtnGuardar_Click"  Height="22px" Width="62px" />
+                                <asp:Button ID="BtnCancelar" runat="server" Text="Cancelar" OnClick="BtnCancelar_Click" OnClientClick="return confirm('¿Esta seguro que desea salir de la pagina Registrar Usuario?');"  Height="22px" Width="62px" />
+                                 <asp:Button ID="BtnSalir" runat="server" Text="Salir" OnClick="BtnSalir_Click" OnClientClick="return confirm('¿Esta seguro que desea salir de la pagina Registrar Usuario?');"  Height="22px" Width="62px" />
                             </td>
                         </tr>
                 </table>
