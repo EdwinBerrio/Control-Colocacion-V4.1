@@ -121,11 +121,11 @@ namespace LayerBussinnes
         }
 
         //metodo MostrarServiciosXusuario()
-        public DataSet MostrarServiciosXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
+        public DataSet ConsultaProduccionXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
         {
             try
             {
-                return DAle.MostrarServiciosXusuario(PIdOperario, PFechaServicio, PFechaFinal);
+                return DAle.ConsultaProduccionXusuario(PIdOperario, PFechaServicio, PFechaFinal);
             }
             catch (Exception)
             {
