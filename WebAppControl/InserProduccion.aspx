@@ -5,41 +5,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="css/StyleSLogin.css" type="text/css" />
+    <link rel="stylesheet" href="css/Style1.css" type="text/css" />
     <title></title>
 </head>
 <body>
-    
-    
     <header>
+    <div id="navcontainer">
+        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS </h1>
+    <ul id="navlist">
 
-       
-        <h1><a id="title">Registro Servicio Bombeo</a></h1><br ><br ><br ><br ><br >
-        
-        <nav id="menu"><br ><br ><br ><br ><br >
-                    
-                        <ul>
-                                <li><a id ="A6" runat="server" href="/Index.aspx">Menu Principal</a></li>
-                                
-                
-                                <li><a id ="A1" runat="server" href="/InsertarUsuario.aspx">Registrar Usuario</a></li>
-                                
-                                <li><a id ="A7" runat="server" href="/InsertEquipoBombeo.aspx">Inserta Produccion</a></li>
-                                
-               
-                                 <li><a id ="A2" runat="server" href="/InsertEquipoBombeo.aspx">Registrar Equipo Bombeo</a></li>
-                              
-                
-                                <li><a id ="A3" runat="server" href="/MostrarUsuario.aspx">Usuarios Registrados</a></li>
-                              
-                
-                                <li><a id ="A4" runat="server" href="/MostrarProduccion.aspx">Produccion</a></li>
-                             
-                                <li><a id ="A5" runat="server" href="/MostrarEquipoBomb.aspx">Equipos de Bombeo</a></li>
+        <li><a id ="A1" runat="server" href="/Index.aspx">Menu Principal</a></li>         
+        <li><a id ="A2" runat="server" href="/InsertarUsuario.aspx">Registrar Usuario</a></li>                            
+        <li><a id ="A3" runat="server" href="/InsertEquipoBombeo.aspx">Registrar Equipo</a></li>
+        <li><a id ="A4" runat="server" >Registrar Produccion</a></li>                         
+        <li><a id ="A5" runat="server" href="/MostrarUsuario.aspx">Usuarios Registrados</a></li>                           
+        <li><a id ="A6" runat="server" href="/MostrarProduccion.aspx">Produccion</a></li>                         
+        <li><a id ="A7" runat="server" href="/MostrarEquipoBomb.aspx">Equipos de Bombeo</a></li>
+        <li><a id ="A8" runat="server" href="/ProduccionXUsuario.aspx">Produccion por Usuario</a></li>
 
-                          </ul>
-        
-    </header><br ><br ><br >
+    </ul>
+</div>
+    </header>
+
              <form id="form2" runat="server">
     <div>
         
