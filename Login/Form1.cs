@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Data;
+
 
 namespace Login
 {
@@ -46,17 +46,29 @@ namespace Login
                 if ((text_Nombre.Text == DR["UserName"].ToString()) || (text_Contraseña.Text == DR["password"].ToString()))
                 {
                     //instanciando el formulario principal
-                    Form1 frmPrincipal = new Form1();
-                    frmPrincipal.Show();//abriendo el formulario principal
+                    Form1 index = new Form1();
+                    index.Show();//abriendo el formulario principal
                     this.Hide();//esto sirve para ocultar el formulario de login
-                }
-                catch
+            }
+         }
+            catch
                 {
                 //en caso que la contraseña sea erronea mostrara un mensaje
                 //dentro de los parentesis va: "Mensaje a mostrar","Titulo de la ventana",botones a mostrar en ste caso OK, icono a mostrar en este caso uno de error
                 MessageBox.Show("Error! Su contraseña y/o usuario son invalidos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Salir de la aplicacion
+            Application.Exit();
+        }
+        private void text_Nombre_TextChanged(object sender, EventArgs e)
+        {
+            //aca se activa el boton Login
+            picture_login.Enabled = true;
         }
     }
 }
+

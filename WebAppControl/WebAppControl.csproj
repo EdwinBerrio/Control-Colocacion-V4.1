@@ -225,6 +225,10 @@
       <Project>{dbebc9b8-886e-4b60-9119-f1a6d1c09658}</Project>
       <Name>LayerBusinness</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Login\Login.csproj">
+      <Project>{5bdcf4ec-8760-45b5-8937-fc1819c783dd}</Project>
+      <Name>Login</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Imagen\" />

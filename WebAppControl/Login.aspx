@@ -9,7 +9,9 @@
     <link href="Css/StyleSLogin.css" rel="stylesheet" />
      <%--Enlace a hoja de estilos--%>
     <link rel="stylesheet" href="css/StyleSLogin.css" type="text/css" />
-    <a href="InsertarUsuario.aspx">InsertarUsuario.aspx</a>
+    <%--<a href="InsertarUsuario.aspx">InsertarUsuario.aspx</a>--%>
+    <%--<meta name="viewport" content="width=device-width, initial-scale=1.0" />--%>
+    <%--<meta name="description" content="The description of my page" />--%>
 </head>
 <body>
  <%--  
