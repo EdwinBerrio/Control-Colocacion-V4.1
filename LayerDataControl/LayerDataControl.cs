@@ -247,12 +247,12 @@ namespace LayerData
         //    }
         //}
 
-        public DataSet MostrarServiciosXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
+        public DataSet ConsultaProduccionXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
                 cnx.Open();
-                SqlCommand com = new SqlCommand("SpServiciosXusuario", cnx);
+                SqlCommand com = new SqlCommand("SpConsultaProduccionXusuario", cnx);
                 com.CommandType = CommandType.StoredProcedure;
                 com.Parameters.AddWithValue("@IdOperario", PIdOperario);
                 com.Parameters.AddWithValue("@FechaServicio", PFechaServicio);

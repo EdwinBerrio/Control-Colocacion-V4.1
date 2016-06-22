@@ -10,7 +10,7 @@
 namespace WebAppControl {
     
     
-    public partial class ServicioXUsuario {
+    public partial class ProduccionXUsuario {
         
         /// <summary>
         /// Control form2.
@@ -76,13 +76,13 @@ namespace WebAppControl {
         protected global::System.Web.UI.WebControls.TextBox TextFechaFinal;
         
         /// <summary>
-        /// Control BtnGuardar.
+        /// Control BtnBuscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnGuardar;
+        protected global::System.Web.UI.WebControls.Button BtnBuscar;
         
         /// <summary>
         /// Control BtnCancelar.
@@ -94,6 +94,15 @@ namespace WebAppControl {
         protected global::System.Web.UI.WebControls.Button BtnCancelar;
         
         /// <summary>
+        /// Control BtnSalir.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnSalir;
+        
+        /// <summary>
         /// Control GridViewProduccUsuario.
         /// </summary>
         /// <remarks>
@@ -101,6 +110,33 @@ namespace WebAppControl {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewProduccUsuario;
+        
+        /// <summary>
+        /// Control SqlDataSourceProduccionXUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceProduccionXUsuario;
+        
+        /// <summary>
+        /// Control GridViewTotal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewTotal;
+        
+        /// <summary>
+        /// Control SqlDataSourceTotal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceTotal;
         
         /// <summary>
         /// Control lbLMsg.
