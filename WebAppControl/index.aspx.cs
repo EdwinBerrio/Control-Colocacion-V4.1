@@ -14,11 +14,6 @@ namespace WebAppControl
 
         }
 
-        protected void BtnIngresar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void BtnIngresar_Click1(object sender, EventArgs e)
         {
 
