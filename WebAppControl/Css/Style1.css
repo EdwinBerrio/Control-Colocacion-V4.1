@@ -2,6 +2,11 @@
     background-image: url(/Imagen/Pantalla1.png);
     font-family: sans-serif; font-size: 14px;
 }
+#BtnIngresar{
+    font-size:1.5em;
+    float:right;
+    margin-right:10%;
+}
 
 #titulo{
     text-align:center;
