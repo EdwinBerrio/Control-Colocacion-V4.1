@@ -175,24 +175,6 @@ namespace WebAppControl {
         protected global::System.Web.UI.WebControls.Button BtnSalir;
         
         /// <summary>
-        /// Control GridViewProduccUsuario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewProduccUsuario;
-        
-        /// <summary>
-        /// Control SqlDataSourceProduccionXUsuario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceProduccionXUsuario;
-        
-        /// <summary>
         /// Control GridViewTotal.
         /// </summary>
         /// <remarks>
@@ -209,6 +191,24 @@ namespace WebAppControl {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceTotal;
+        
+        /// <summary>
+        /// Control GridViewProduccUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewProduccUsuario;
+        
+        /// <summary>
+        /// Control SqlDataSourceProduccionXUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceProduccionXUsuario;
         
         /// <summary>
         /// Control lbLMsg.

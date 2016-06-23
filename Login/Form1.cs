@@ -48,9 +48,9 @@ namespace Login
                 if ((text_Nombre.Text == DR["UserName"].ToString()) || (text_Contraseña.Text == DR["password"].ToString()))
                 {
                     //instanciando el formulario principal
-                    index abrir = new index();
-                    abrir.Show();//abriendo el formulario principal
-                    this.Hide();//esto sirve para ocultar el formulario de login
+                    //index abrir = new index();
+                    //abrir.Show();//abriendo el formulario principal
+                    //this.Hide();//esto sirve para ocultar el formulario de login
             }
          }
             catch
