@@ -17,6 +17,9 @@ namespace WebAppControl
         protected void BtnIngresar_Click1(object sender, EventArgs e)
         {
 
+            Login form = new Login();
+           // index.Show();
         }
+        
     }
 }
