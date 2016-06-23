@@ -44,8 +44,8 @@
      <form id="form2" runat="server">
     <div id="container2">
         
-        <div id="cajamenu2">
-       <table>
+        <div id="cajamenuPU">
+       <table style="margin-left: 27px; margin-top: 6px">
            <h2 id="titulosFormu">PRODUCCION POR USUARIO</h2>
            <tr>
 
@@ -82,9 +82,10 @@
                     <asp:Button ID="BtnSalir" runat="server" Text="Salir" OnClick="BtnSalir_Click" OnClientClick="return confirm('¿Esta seguro que desea salir?');"  Height="22px" Width="62px" />
                 </td>
             </tr>
-           
        </table>
-             <div>
+
+        </div>
+         <div>
 
                     <h3 id="titulosFormu2"> TOTAL M3 COLOCADOS</h3>
                     
@@ -111,8 +112,7 @@
                         </SelectParameters>
                     </asp:SqlDataSource>
                 </div>
-            
-            </div>
+
             <div id="tituloGrilla3">
                 <h1>SERVICIOS REALIZADOS</h1>
             </div>
