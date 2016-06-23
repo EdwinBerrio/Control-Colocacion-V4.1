@@ -17,10 +17,12 @@ namespace Login
         public login()
         {
             InitializeComponent();
-        }
+            text_Contraseña.PasswordChar = '$';
+            
 
         private void picture_login_Click(object sender, EventArgs e)
         {
+
             try
             {
                 //creando la conexion
@@ -68,6 +70,11 @@ namespace Login
         {
             //aca se activa el boton Login
             picture_login.Enabled = true;
+        }
+
+        private void text_Contraseña_TextChanged(object sender, EventArgs e)
+        {
+            text_Contraseña.PasswordChar = '$';
         }
     }
 }
