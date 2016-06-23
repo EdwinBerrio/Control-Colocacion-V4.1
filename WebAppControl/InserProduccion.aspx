@@ -10,8 +10,22 @@
 </head>
 <body>
     <header>
+        <div id="logotitulo">
+            <table>
+                <tr>
+                    <td>
+                        <img src="/Imagen/logo.png" />
+                    </td>
+                    <td>
+                        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS </h1>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
     <div id="navcontainer">
-        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS </h1>
+        
+        
     <ul id="navlist">
 
         <li><a id ="A1" runat="server" href="/Index.aspx">Menu Principal</a></li>         
@@ -31,23 +45,24 @@
     <div>
         
         <div id="cajamenu">
-        <table>
+        <table id="tabla">
+            <h2 id="titulosFormu">REGISTRO PRODUCCION</h2>
             <%--caja para los datos--%>
             <tr>
-                <td>
-                    <asp:Label ID="label1" runat="server" Text="Numero Reporte"></asp:Label>
+                <td class="auto-style2">
+                    <asp:Label ID="labela" runat="server" Text="Numero Reporte"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextIdReporte"  runat ="server" TextMode="Number"></asp:TextBox>
+                    <asp:TextBox ID="TextIdReporte"  runat ="server" TextMode="Number" Width="200px" Height="30px"></asp:TextBox>
                 </td>
             </tr>
 
             <tr>
-                <td>
-                    <asp:Label ID="label9" runat="server" Text="Identificacion Operario"></asp:Label>
+                <td class="auto-style2">
+                    <asp:Label ID="labelmm" runat="server" Text="Identificacion Operario"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextIdOperario" runat ="server" TextMode="Number"></asp:TextBox>
+                    <asp:TextBox ID="TextIdOperario" runat ="server" TextMode="Number" Width="200px" Height="30px"></asp:TextBox>
                 </td>
             </tr>
 
@@ -56,7 +71,7 @@
                     <asp:Label ID="label2" runat="server" Text="Fecha Inicio Servicio"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextFechaServicio" runat ="server" TextMode="Date"></asp:TextBox>
+                    <asp:TextBox ID="TextFechaServicio" runat ="server" TextMode="Date" Width="200px" Height="30px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -64,7 +79,7 @@
                     <asp:Label ID="label11" runat="server" Text="Fecha Fin Servicio"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextFechaFinal" runat ="server" TextMode="Date"></asp:TextBox>
+                    <asp:TextBox ID="TextFechaFinal" runat ="server" TextMode="Date" Width="200px" Height="30px"></asp:TextBox>
                 </td>
             </tr>
             
@@ -74,7 +89,7 @@
                 </td>
                 <td>
                     
-                    <asp:DropDownList ID="TextTipoBomba" runat="server" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged">
+                    <asp:DropDownList ID="TextTipoBomba" runat="server" Width="200px" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged" Height="30px">
                        <asp:ListItem Text="" Value="" />
                        <asp:ListItem Text="AUTOBOMBA" Value="1001" />
                        <asp:ListItem Text="ESTACIONARIA TIRO" Value="1002" />
@@ -84,11 +99,11 @@
             </tr>
 
             <tr>
-                <td>
+                <td class="auto-style2">
                     <asp:Label ID="label10" runat="server" Text="Codigo Bomba"></asp:Label>
                 </td>
                 <td>
-                    <asp:DropDownList ID="TextCodigoBomba" runat="server" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged" DataSourceID="SqlDataSourceEquipoBombeo" DataTextField="IdBomba" DataValueField="IdBomba">
+                    <asp:DropDownList ID="TextCodigoBomba" runat="server" Width="200px" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged" DataSourceID="SqlDataSourceEquipoBombeo" DataTextField="IdBomba" DataValueField="IdBomba" Height="30px">
                        <asp:ListItem Text=" " Value=" " />
                                   
                    </asp:DropDownList>
@@ -101,7 +116,7 @@
                     <asp:Label ID="label8" runat="server" Text="Nombre Obra"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextNombreObra" runat ="server" ></asp:TextBox>
+                    <asp:TextBox ID="TextNombreObra" runat ="server" Width="200px" Height="30px"></asp:TextBox>
                 </td>
             </tr>
             
@@ -110,7 +125,7 @@
                     <asp:Label ID="label4" runat="server" Text="Numero Pedido"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextNumeroPedido" runat="server" TextMode="Number"></asp:TextBox>
+                    <asp:TextBox ID="TextNumeroPedido" runat="server" TextMode="Number" Width="200px" Height="30px"></asp:TextBox>
                 </td>
             </tr>
             
@@ -119,7 +134,7 @@
                     <asp:Label ID="label5" runat="server" Text="M3 Colocados"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextMetrosColocados" runat ="server" TextMode="Number"></asp:TextBox>
+                    <asp:TextBox ID="TextMetrosColocados" runat ="server" TextMode="Number" Width="200px" Height="30px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -127,7 +142,7 @@
                     <asp:Label ID="label6" runat="server" Text="Hora Inicio Servicio"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextHoraInicio" runat ="server" TextMode="Time"></asp:TextBox>
+                    <asp:TextBox ID="TextHoraInicio" runat ="server" TextMode="Time" Width="200px" Height="30px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -135,12 +150,12 @@
                     <asp:Label ID="label7" runat="server" Text="Hora Fin Servicio"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextHoraFin" runat ="server" TextMode="Time"></asp:TextBox>
+                    <asp:TextBox ID="TextHoraFin" runat ="server" TextMode="Time" Width="200px" Height="30px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>
+                <td class="Button">
                     <asp:Button ID="BtnGuardar" runat="server" Text="Guardar" OnClick="BtnGuardar_Click" />
                     <asp:Button ID="BtnCancelar" runat="server" Text="Cancelar" OnClick="BtnCancelar_Click" OnClientClick="return confirm('¿Esta seguro de no guardar los datos de produccion?');" />
                      <asp:Button ID="BtnSalir" runat="server" Text="Salir" OnClick="BtnSalir_Click" OnClientClick="return confirm('¿Esta seguro que desea salir de la pagina Registrar Produccion?');"/>

@@ -10,8 +10,21 @@
 </head>
 <body>
     <header>
+        <div id="logotitulo">
+            <table>
+                <tr>
+                    <td>
+                        <img src="/Imagen/logo.png" />
+                    </td>
+                    <td>
+                        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS </h1>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
     <div id="navcontainer">
-        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS </h1>
+        
     <ul id="navlist">
 
         <li><a id ="A1" runat="server" href="/Index.aspx">Menu Principal</a></li>         
@@ -26,24 +39,18 @@
     </ul>
 </div>
     </header> 
-   
-    
+ 
     <form id="form1" runat="server">
-    
-        
-        
         <div>
-             <h1>Registro de Usuarios</h1>
-       
-        
-                <table>
-                        <%--caja para los datos--%>
+            <div id="cajamenu">
+        <table id="tabla">
+             <h2 id="titulosFormu">Registro de Usuarios</h2>
                         <tr>
-                            <td>
+                            <td class="auto-style2">
                                 <asp:Label ID="label1" runat="server" Text="N° Identificacion"></asp:Label>
                             </td>
                             <td>
-                                <h4><asp:TextBox ID="TextIdCodigo" runat ="server"></asp:TextBox></h4>
+                                <h4><asp:TextBox ID="TextIdCodigo" runat ="server" Height="30px" Width="200px"></asp:TextBox></h4>
                             </td>
                         </tr>
                         <tr>
@@ -51,7 +58,7 @@
                                 <asp:Label ID="label2" runat="server" Text="Apellidos"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox ID="TextApellidos" runat ="server"></asp:TextBox>
+                                <asp:TextBox ID="TextApellidos" runat ="server" Height="30px" Width="200px"></asp:TextBox>
                             </td>
                         </tr>
             
@@ -60,7 +67,7 @@
                                <asp:Label ID="label3" runat="server" Text="Nombres"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox ID="TextNombres" runat ="server"></asp:TextBox>
+                                <asp:TextBox ID="TextNombres" runat ="server" Height="30px" Width="200px"></asp:TextBox>
                             </td>
                         </tr>
             
@@ -69,7 +76,7 @@
                                 <asp:Label ID="label4" runat="server" Text="Fecha Nacimiento"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox ID="TextFechaNacimiento" runat="server" TextMode="Date"></asp:TextBox>
+                                <asp:TextBox ID="TextFechaNacimiento" runat="server" TextMode="Date" Height="30px" Width="200px"></asp:TextBox>
                             </td>
                         </tr>
             >
@@ -78,7 +85,7 @@
                                  <asp:Label ID="label5" runat="server" Text="Cargo Empleado"></asp:Label>
                             </td>
                             <td>
-                                <asp:DropDownList ID="TextCargoEmpleado" runat="server" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged">
+                                <asp:DropDownList ID="TextCargoEmpleado" runat="server" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged" Height="30px" Width="200px">
                                     <asp:ListItem Text=" " Value=" " />
                                     <asp:ListItem Text="OPE. AUTOBOMBA" Value="10001" />
                                     <asp:ListItem Text="OPE. ESTACIONARIA" Value="10002" />
@@ -93,7 +100,7 @@
                                  <asp:Label ID="label6" runat="server" Text="Numero Telefono"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox ID="TextNumeroTelefono" runat ="server" TextMode="Phone"></asp:TextBox>
+                                <asp:TextBox ID="TextNumeroTelefono" runat ="server" TextMode="Phone" Height="30px" Width="200px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
@@ -101,7 +108,7 @@
                                 <asp:Label ID="label7" runat="server" Text="Email"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox ID="TextEmail" runat ="server" TextMode="Email"></asp:TextBox></h4>
+                                <asp:TextBox ID="TextEmail" runat ="server" TextMode="Email" Height="30px" Width="200px"></asp:TextBox></h4>
                             </td>
                         </tr>
                         <tr>
@@ -113,7 +120,7 @@
                             </td>
                         </tr>
                 </table>
-       
+        </div>
         </div>
         <p>
             <asp:Label ID="lbLMsg" runat="server"></asp:Label>

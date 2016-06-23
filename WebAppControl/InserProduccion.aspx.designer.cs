@@ -94,13 +94,13 @@ namespace WebAppControl {
         protected global::System.Web.UI.HtmlControls.HtmlForm form2;
         
         /// <summary>
-        /// Control label1.
+        /// Control labela.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label1;
+        protected global::System.Web.UI.WebControls.Label labela;
         
         /// <summary>
         /// Control TextIdReporte.
@@ -112,13 +112,13 @@ namespace WebAppControl {
         protected global::System.Web.UI.WebControls.TextBox TextIdReporte;
         
         /// <summary>
-        /// Control label9.
+        /// Control labelmm.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label9;
+        protected global::System.Web.UI.WebControls.Label labelmm;
         
         /// <summary>
         /// Control TextIdOperario.
