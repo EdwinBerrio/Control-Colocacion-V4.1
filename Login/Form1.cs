@@ -12,9 +12,9 @@ using System.Data.SqlClient;
 
 namespace Login
 {
-    public partial class Form1 : Form
+    public partial class login : Form
     {
-        public Form1()
+        public login()
         {
             InitializeComponent();
         }
@@ -46,8 +46,8 @@ namespace Login
                 if ((text_Nombre.Text == DR["UserName"].ToString()) || (text_Contraseña.Text == DR["password"].ToString()))
                 {
                     //instanciando el formulario principal
-                    Form1 index = new Form1();
-                    index.Show();//abriendo el formulario principal
+                    index abrir = new index();
+                    abrir.Show();//abriendo el formulario principal
                     this.Hide();//esto sirve para ocultar el formulario de login
             }
          }

@@ -1,6 +1,6 @@
 ﻿namespace Login
 {
-    partial class Form1
+    partial class login
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -95,13 +95,13 @@
             this.button1.Image = global::Login.Properties.Resources.login;
             this.button1.Location = new System.Drawing.Point(259, 251);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 44);
+            this.button1.Size = new System.Drawing.Size(150, 44);
             this.button1.TabIndex = 8;
             this.button1.Text = "CANCELAR";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,8 +114,10 @@
             this.Controls.Add(this.picture_login);
             this.Controls.Add(this.text_Contraseña);
             this.Controls.Add(this.text_Nombre);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "login";
+            this.Text = "login";
             ((System.ComponentModel.ISupportInitialize)(this.picture_login)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
