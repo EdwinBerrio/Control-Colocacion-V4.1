@@ -61,7 +61,7 @@
             // picture_login
             // 
             this.picture_login.BackColor = System.Drawing.Color.Transparent;
-            this.picture_login.Location = new System.Drawing.Point(470, 252);
+            this.picture_login.Location = new System.Drawing.Point(-23, -117);
             this.picture_login.Name = "picture_login";
             this.picture_login.Size = new System.Drawing.Size(159, 44);
             this.picture_login.TabIndex = 3;

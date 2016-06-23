@@ -30,7 +30,7 @@ namespace Login
                                                             Initial Catalog=BDcontrol3;Persist Security Info=True;User ID=BDcontrol3; Password=BDcontrol.2016");
                 //abriendo conexion
                 strconn.Open();
-
+                //4128b289
                 SqlCommand comando = new SqlCommand("select UserName, password from dbo.IdLogin where UserName = '" + text_Nombre.Text + "'And password = '" + text_Contraseña.Text + "' ", strconn);
 
                 //ejecuta una instruccion de sql devolviendo el numero de las filas afectadas
@@ -78,4 +78,3 @@ namespace Login
         }
     }
 }
-
