@@ -9,10 +9,23 @@
     <title></title>
 </head>
 <body>
+    <header>
+        <div id="logotitulo">
+            <table>
+                <tr>
+                    <td>
+                        <img src="/Imagen/logo.png" />
+                    </td>
+                    <td>
+                        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS </h1>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
     
-<header>
     <div id="navcontainer">
-        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS </h1>
+        
     <ul id="navlist">
 
         <li><a id ="A1" runat="server" href="/Index.aspx">Menu Principal</a></li>         
@@ -29,17 +42,18 @@
     </header>
 
      <form id="form2" runat="server">
-    <div>
-        <h1>PRODUCCION POR USUARIO</h1>
-        <div id="cajamenu">
+    <div id="container2">
+        
+        <div id="cajamenu2">
        <table>
+           <h2 id="titulosFormu">PRODUCCION POR USUARIO</h2>
            <tr>
 
-                <td>
+                <td class="auto-style2">
                     <asp:Label ID="label9" runat="server" Text="Identificacion Operario"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextIdOperario" runat ="server" TextMode="Number"></asp:TextBox>
+                    <asp:TextBox ID="TextIdOperario" runat ="server" TextMode="Number" Height="30px" Width="200px"></asp:TextBox>
                 </td>
             </tr>
 
@@ -48,7 +62,7 @@
                     <asp:Label ID="label2" runat="server" Text="Fecha Inicio Servicio"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextFechaServicio" runat ="server" TextMode="Date"></asp:TextBox>
+                    <asp:TextBox ID="TextFechaServicio" runat ="server" TextMode="Date" Height="30px" Width="200px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -56,7 +70,7 @@
                     <asp:Label ID="label11" runat="server" Text="Fecha Fin Servicio"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextFechaFinal" runat ="server" TextMode="Date"></asp:TextBox>
+                    <asp:TextBox ID="TextFechaFinal" runat ="server" TextMode="Date" Height="30px" Width="200px"></asp:TextBox>
                 </td>
             </tr>
              
@@ -68,10 +82,43 @@
                     <asp:Button ID="BtnSalir" runat="server" Text="Salir" OnClick="BtnSalir_Click" OnClientClick="return confirm('¿Esta seguro que desea salir?');"  Height="22px" Width="62px" />
                 </td>
             </tr>
-
+           
        </table>
-            <div>
-                <asp:GridView ID="GridViewProduccUsuario" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSourceProduccionXUsuario" DataKeyNames="IdReporte">
+             <div>
+
+                    <h3 id="titulosFormu2"> TOTAL M3 COLOCADOS</h3>
+                    
+                    <asp:GridView ID="GridViewTotal" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataSourceID="SqlDataSourceTotal" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" Height="30px" Width="156px">
+                        <AlternatingRowStyle BackColor="#DCDCDC" />
+                        <Columns>
+                            <asp:BoundField DataField="Total produccion" HeaderText="TOTAL M3 " ReadOnly="True" SortExpression="Total produccion" />
+                        </Columns>
+                        <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+                        <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
+                        <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                        <SortedAscendingHeaderStyle BackColor="#0000A9" />
+                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                        <SortedDescendingHeaderStyle BackColor="#000065" />
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSourceTotal" runat="server" ConnectionString="<%$ ConnectionStrings:BDcontrol3ConnectionString %>" SelectCommand="SpConsultaProduccionXusuario" SelectCommandType="StoredProcedure">
+                        <SelectParameters>
+                            <asp:ControlParameter ControlID="TextIdOperario" Name="IdOperario" PropertyName="Text" Type="Int64" />
+                            <asp:ControlParameter ControlID="TextFechaServicio" DbType="Date" Name="FechaServicio" PropertyName="Text" />
+                            <asp:ControlParameter ControlID="TextFechaFinal" DbType="Date" Name="FechaFinal" PropertyName="Text" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
+                </div>
+            
+            </div>
+            <div id="tituloGrilla3">
+                <h1>SERVICIOS REALIZADOS</h1>
+            </div>
+        <div id="tablamostrar">
+            
+                <asp:GridView ID="GridViewProduccUsuario" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSourceProduccionXUsuario" DataKeyNames="IdReporte" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
                     <Columns>
                         <asp:BoundField DataField="IdReporte" HeaderText="IdReporte" ReadOnly="True" SortExpression="IdReporte" />
                         <asp:BoundField DataField="IdOperario" HeaderText="IdOperario" SortExpression="IdOperario" />
@@ -86,6 +133,16 @@
                         <asp:BoundField DataField="FechaFinal" HeaderText="FechaFinal" SortExpression="FechaFinal" />
                     </Columns>
                    
+                    <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
+                    <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
+                    <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
+                    <RowStyle BackColor="White" ForeColor="#003399" />
+                    <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+                    <SortedAscendingCellStyle BackColor="#EDF6F6" />
+                    <SortedAscendingHeaderStyle BackColor="#0D4AC4" />
+                    <SortedDescendingCellStyle BackColor="#D6DFDF" />
+                    <SortedDescendingHeaderStyle BackColor="#002876" />
+                   
                 </asp:GridView>
 
                 <asp:SqlDataSource ID="SqlDataSourceProduccionXUsuario" runat="server" ConnectionString="<%$ ConnectionStrings:BDcontrol3ConnectionStringCargoEmpleado %>" SelectCommand="SELECT * FROM [Produccion] WHERE (([IdOperario] = @IdOperario) AND ([FechaServicio] &gt;= @FechaServicio) AND ([FechaFinal] &lt;= @FechaFinal))">
@@ -95,26 +152,10 @@
                         <asp:ControlParameter ControlID="TextFechaFinal" DbType="Date" Name="FechaFinal" PropertyName="Text" />
                     </SelectParameters>
                 </asp:SqlDataSource>
-                <div>
-
-                    <h3> TOTAL PRODUCCION USUARIO</h3>
-                    
-                    <asp:GridView ID="GridViewTotal" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataSourceID="SqlDataSourceTotal">
-                        <Columns>
-                            <asp:BoundField DataField="Total produccion" HeaderText="Total produccion" ReadOnly="True" SortExpression="Total produccion" />
-                        </Columns>
-                    </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSourceTotal" runat="server" ConnectionString="<%$ ConnectionStrings:BDcontrol3ConnectionString %>" SelectCommand="SpConsultaProduccionXusuario" SelectCommandType="StoredProcedure">
-                        <SelectParameters>
-                            <asp:ControlParameter ControlID="TextIdOperario" Name="IdOperario" PropertyName="Text" Type="Int64" />
-                            <asp:ControlParameter ControlID="TextFechaServicio" DbType="Date" Name="FechaServicio" PropertyName="Text" />
-                            <asp:ControlParameter ControlID="TextFechaFinal" DbType="Date" Name="FechaFinal" PropertyName="Text" />
-                        </SelectParameters>
-                    </asp:SqlDataSource>
-                </div>
+               
 
             </div>
-            </div>
+
          </div> 
        <p>
             <asp:Label ID="lbLMsg" runat="server"></asp:Label>

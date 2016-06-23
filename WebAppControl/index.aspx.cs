@@ -16,7 +16,7 @@ namespace WebAppControl
 
         protected void BtnIngresar_Click1(object sender, EventArgs e)
         {
-
+            Response.Redirect("/InsertarUsuario.aspx");
         }
     }
 }
