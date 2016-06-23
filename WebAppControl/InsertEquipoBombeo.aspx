@@ -10,8 +10,21 @@
 </head>
 <body>
     <header>
+        <div id="logotitulo">
+            <table>
+                <tr>
+                    <td>
+                        <img src="/Imagen/logo.png" />
+                    </td>
+                    <td>
+                        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS </h1>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
     <div id="navcontainer">
-        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS </h1>
+        
     <ul id="navlist">
 
         <li><a id ="A1" runat="server" href="/Index.aspx">Menu Principal</a></li>         
@@ -29,43 +42,44 @@
 
     <form id="form1" runat="server">
     <div>
-        <h1>Registro de Equipo Bombeo</h1>
         <div id="cajamenu">
-        <table style="height: 408px">
-            <%--caja para los datos--%>
+        <h2 id="titulosFormu">Registro de Equipo Bombeo</h2>
+        
+        <table id="tabla">
+           
             <tr>
-                <td>
-                    <h4><asp:Label ID="label1" runat="server" Text="Codigo Bomba"></asp:Label></h4>
+                <td class="auto-style2">
+                    <asp:Label ID="label1" runat="server" Text="Codigo Bomba"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextCodigoBomba" runat ="server" TextMode="Number" Height="18px" Width="153px"></asp:TextBox>
+                    <asp:TextBox ID="TextCodigoBomba" runat ="server" TextMode="Number" Height="30px" Width="200px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <h4><asp:Label ID="label2" runat="server" Text="Marca Equipo"></asp:Label></h4>
+                    <asp:Label ID="label2" runat="server" Text="Marca Equipo"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextMarca" runat ="server" Height="16px" Width="150px"></asp:TextBox>
-                </td>
-            </tr>
-            
-            <tr>
-                <td class="auto-style2">
-                    <h4><asp:Label ID="label3" runat="server" Text="Modelo del Equipo"></asp:Label></h4>
-                </td>
-                <td>
-                    <asp:TextBox ID="TextModelo" runat ="server" TextMode="Number" Height="19px" Width="147px"></asp:TextBox>
+                    <asp:TextBox ID="TextMarca" runat ="server" Height="30px" Width="200px"></asp:TextBox>
                 </td>
             </tr>
             
             <tr>
                 <td class="auto-style2">
-                    <h4><asp:Label ID="label4" runat="server" Text="Tipo de Bomba"></asp:Label></h4>
+                    <asp:Label ID="label3" runat="server" Text="Modelo del Equipo"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextModelo" runat ="server" TextMode="Number" Height="30px" Width="200px"></asp:TextBox>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="label4" runat="server" Text="Tipo de Bomba"></asp:Label>
                 </td>
                 <td>
                     
-                    <asp:DropDownList ID="TextTipoBomba" runat="server" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged">
+                    <asp:DropDownList ID="TextTipoBomba" runat="server" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged" Height="30px" Width="200px">
                        <asp:ListItem Text=" " Value=" " />
                        <asp:ListItem Text="AUTOBOMBA" Value="1001" />
                        <asp:ListItem Text="ESTACIONARIA TIRO" Value="1002" />
@@ -73,17 +87,14 @@
                    </asp:DropDownList>
                 </td>
             </tr>
-            
             <tr>
                 <td class="auto-style2">
-                   <h4> <asp:Label ID="label5" runat="server" Text="Alcance del Equipo"></asp:Label></h4>
+                   <asp:Label ID="label5" runat="server" Text="Alcance del Equipo"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextAlcance" runat ="server" TextMode="Number" Height="16px" Width="147px"></asp:TextBox>
+                    <asp:TextBox ID="TextAlcance" runat ="server" TextMode="Number" Height="30px" Width="200px"></asp:TextBox>
                 </td>
-            </tr>
-
-            <%--<br/>--%>            
+            </tr>        
             <tr>
                 <td class="auto-style2">&nbsp;</td>
                 <td>

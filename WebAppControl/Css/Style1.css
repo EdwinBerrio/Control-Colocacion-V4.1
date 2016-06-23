@@ -70,3 +70,25 @@ font-size:30px;
  color: #3a7999;
  box-shadow: inset 0 0 0 3px #3a7999;
 }
+
+/*grillas mostrar*/
+
+/*#gr{
+    margin:auto;
+    border: 4px solid #000;
+    width:1500PX;
+    height:auto;
+}*/
+#GridView1{
+    margin:auto;
+    margin-bottom:50px;
+}
+#botSalir{
+    font-size:1.5em;
+ text-align:center;
+    margin-top:1%;
+}
+#tituloGrilla{
+text-align:center;
+
+}

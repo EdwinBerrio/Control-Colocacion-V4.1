@@ -50,7 +50,7 @@
                                 <asp:Label ID="label1" runat="server" Text="N° Identificacion"></asp:Label>
                             </td>
                             <td>
-                                <h4><asp:TextBox ID="TextIdCodigo" runat ="server" Height="30px" Width="200px"></asp:TextBox></h4>
+                                <asp:TextBox ID="TextIdCodigo" runat ="server" Height="30px" Width="200px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
