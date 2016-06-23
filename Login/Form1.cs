@@ -18,7 +18,7 @@ namespace Login
         {
             InitializeComponent();
             text_Contraseña.PasswordChar = '$';
-            
+        }    
 
         private void picture_login_Click(object sender, EventArgs e)
         {
