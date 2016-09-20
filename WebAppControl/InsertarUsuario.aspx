@@ -17,7 +17,7 @@
                         <img src="/Imagen/logo.png" />
                     </td>
                     <td>
-                        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS </h1>
+                        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS DE CONCRETO</h1>
                     </td>
                 </tr>
             </table>
@@ -108,7 +108,7 @@
                                 <asp:Label ID="label7" runat="server" Text="Email"></asp:Label>
                             </td>
                             <td>
-                                <asp:TextBox ID="TextEmail" runat ="server" TextMode="Email" Height="30px" Width="200px"></asp:TextBox></h4>
+                                <asp:TextBox ID="TextEmail" runat ="server" TextMode="Email" Height="30px" Width="200px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>

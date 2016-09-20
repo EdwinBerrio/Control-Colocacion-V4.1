@@ -9,13 +9,25 @@
     <title></title>
 </head>
 <body>
-    
-  
     <div>
         <form runat="server">
                   <asp:Button ID="BtnIngresar" runat="server" Text="INGRESAR" OnClick="BtnIngresar_Click1" />
         </form>
     </div>
-   
+    <header>
+        <div id="logotitulo">
+            <table>
+                <tr>
+                    <td>
+                        <img src="/Imagen/logo.png" />
+                    </td>
+                    <td>
+                        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS DE CONCRETO</h1>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+   </header>
 </body>
 </html>

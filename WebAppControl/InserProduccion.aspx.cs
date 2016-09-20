@@ -45,6 +45,7 @@ namespace WebAppControl
             TextIdReporte.Text = "";
             TextIdOperario.Text = "";
             TextFechaServicio.Text = "";
+            TextTipoBomba.SelectedIndex = 0;
             TextCodigoBomba.SelectedIndex = 0;
             TextNombreObra.Text = "";
             TextNumeroPedido.Text = "";

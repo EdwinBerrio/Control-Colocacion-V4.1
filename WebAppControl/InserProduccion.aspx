@@ -17,7 +17,7 @@
                         <img src="/Imagen/logo.png" />
                     </td>
                     <td>
-                        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS </h1>
+                        <h1 id="titulo">CONTROL Y COLOCACIÒN DE MEZCLAS DE CONCRETO </h1>
                     </td>
                 </tr>
             </table>

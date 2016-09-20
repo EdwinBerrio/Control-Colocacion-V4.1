@@ -14,7 +14,7 @@
     <%--<meta name="description" content="The description of my page" />--%>
 </head>
 <body>
- <%--  
+  
 <div class="login">
   <form method="post">
       <h1>Login</h1>
@@ -23,8 +23,8 @@
     <button type="submit">Ingresar</button>
      <button type="submit">Cancelar</button>
     </form>
-</div>--%>
-    <%--<form id ="form1" runat ="server">
+</div>
+    <form id ="form1" runat ="server">
         <div class="container">
             <img src="Imagen/Pantalla_Inicial.png" id="FonLog" />
             <div class="row">
@@ -38,7 +38,7 @@
                 </div>
             </div>
         </div>
-    </form>--%>
+    </form>
 
     
 </body>

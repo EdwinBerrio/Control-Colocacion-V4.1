@@ -17,12 +17,10 @@ namespace Login
         public login()
         {
             InitializeComponent();
-            text_Contraseña.PasswordChar = '$';
-        }    
+        }
 
         private void picture_login_Click(object sender, EventArgs e)
         {
-
             try
             {
                 //creando la conexion
@@ -30,7 +28,7 @@ namespace Login
                                                             Initial Catalog=BDcontrol3;Persist Security Info=True;User ID=BDcontrol3; Password=BDcontrol.2016");
                 //abriendo conexion
                 strconn.Open();
-                //4128b289
+
                 SqlCommand comando = new SqlCommand("select UserName, password from dbo.IdLogin where UserName = '" + text_Nombre.Text + "'And password = '" + text_Contraseña.Text + "' ", strconn);
 
                 //ejecuta una instruccion de sql devolviendo el numero de las filas afectadas
@@ -71,10 +69,6 @@ namespace Login
             //aca se activa el boton Login
             picture_login.Enabled = true;
         }
-
-        private void text_Contraseña_TextChanged(object sender, EventArgs e)
-        {
-            text_Contraseña.PasswordChar = '$';
-        }
     }
 }
+
