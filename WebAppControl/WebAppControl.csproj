@@ -99,8 +99,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Css\Style1.css" />
-    <Content Include="Css\StyleSLogin.css" />
+    <Content Include="css\AdminLTE.css" />
+    <Content Include="css\Style1.css" />
+    <Content Include="css\StyleSLogin.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.aspx" />
     <Content Include="InserProduccion.aspx" />
@@ -239,7 +240,23 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ajax\" />
+    <Folder Include="css\bootstrap-slider\" />
+    <Folder Include="css\bootstrap-wysihtml5\" />
+    <Folder Include="css\colorpicker\" />
+    <Folder Include="css\datatables\" />
+    <Folder Include="css\datepicker\" />
+    <Folder Include="css\daterangepicker\" />
+    <Folder Include="css\fonts\" />
+    <Folder Include="css\iCheck\" />
+    <Folder Include="css\images\" />
+    <Folder Include="css\ionslider\" />
+    <Folder Include="css\jvectormap\" />
+    <Folder Include="css\morris\" />
+    <Folder Include="css\timepicker\" />
     <Folder Include="Imagen\" />
+    <Folder Include="js\" />
+    <Folder Include="less\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
