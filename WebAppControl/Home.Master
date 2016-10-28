@@ -11,15 +11,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=no"/>
     <link href="//maxcdn.bootstrapcdn.com/boostrap/3.2.0/css/boostrap.min.css" rel="stylesheet" type="text/css" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!--IONICONS-->
     <link href="//code.ionicframework.com/ionicons/1.5.2/Css/ionicons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+<body class="skin-blue">
+    <header class="header">
+        <!--Cabecera de pagina maestra navegador-->
+        <a href="##" class="logo">Sistema Control Colocacion</a>
+        <nav class="navbar navbar-static-top" role="navigation">
+            <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </nav>
+        <!--Fin Cabecera-->
+    </header>
+    <!--Menu-->
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+        <aside class="left-side sidebar-offcanvas">
+            <section class="sidebar">
+              <div class="user-panel">
+                  <div class="pull-left image">
+                      <img src="Imagen/avatar5.png" class="img-circle" alt="User Image"/>
+                  </div>
+                  <div class="pull-left info">
+                      <p>Benvenido</p>
+                  </div>
+              </div>
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i>
+                            <span>Panel General</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##">
+                            <i class="fa fa-th"></i>
+                            <span> Registo Personal</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##">
+                            <i class="fa fa-th"></i>
+                            <span> Registo Equipos</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <!--Fin Menu-->
     </div>
-    </form>
+    <aside class="right-side">
+            <section class="content-header">
+                <h1>
+                    <asp:label ID="LblOpcionMenu" runat="server" Text="Panel General"></asp:label>
+                </h1>
+            </section>
+        <section class="content">
+             <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <!--Aqui se carga lainformacion-->
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form> 
+        </section>
+    </aside>
+   
 </body>
 </html>

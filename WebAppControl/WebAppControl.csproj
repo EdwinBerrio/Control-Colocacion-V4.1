@@ -103,6 +103,23 @@
     <Content Include="css\Style1.css" />
     <Content Include="css\StyleSLogin.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Imagen\ajax-loader.gif" />
+    <Content Include="Imagen\ajax-loader1.gif" />
+    <Content Include="Imagen\avatar.png" />
+    <Content Include="Imagen\avatar04.png" />
+    <Content Include="Imagen\avatar2.png" />
+    <Content Include="Imagen\avatar3.png" />
+    <Content Include="Imagen\avatar5.png" />
+    <Content Include="Imagen\avatar9.jpg" />
+    <Content Include="Imagen\blur-background04.jpg" />
+    <Content Include="Imagen\blur-background08.jpg" />
+    <Content Include="Imagen\blur-background09.jpg" />
+    <Content Include="Imagen\icons.png" />
+    <Content Include="Imagen\sprite-skin-flat.png" />
+    <Content Include="Imagen\sprite-skin-nice.png" />
+    <Content Include="Imagen\user-bg.png" />
+    <Content Include="Imagen\user.jpg" />
+    <Content Include="Imagen\user2.jpg" />
     <Content Include="index.aspx" />
     <Content Include="InserProduccion.aspx" />
     <Content Include="InsertarUsuario.aspx" />
@@ -127,6 +144,7 @@
     <Content Include="Home.Master" />
     <None Include="Properties\PublishProfiles\controlcolocaciondemezclas - Web Deploy.pubxml" />
     <None Include="scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="PaginaGeneral.aspx" />
     <Content Include="ProduccionXUsuario.aspx" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
@@ -217,6 +235,13 @@
     <Compile Include="MostrarUsuario.aspx.designer.cs">
       <DependentUpon>MostrarUsuario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PaginaGeneral.aspx.cs">
+      <DependentUpon>PaginaGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaGeneral.aspx.designer.cs">
+      <DependentUpon>PaginaGeneral.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProduccionXUsuario.aspx.cs">
       <DependentUpon>ProduccionXUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -254,7 +279,8 @@
     <Folder Include="css\jvectormap\" />
     <Folder Include="css\morris\" />
     <Folder Include="css\timepicker\" />
-    <Folder Include="Imagen\" />
+    <Folder Include="Imagen\bootstrap-colorpicker\" />
+    <Folder Include="Imagen\credit\" />
     <Folder Include="js\" />
     <Folder Include="less\" />
   </ItemGroup>

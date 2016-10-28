@@ -461,6 +461,7 @@ body > .header {
   position: relative;
   max-height: 100px;
   z-index: 1030;
+    height: 61px;
 }
 body > .header .navbar {
   height: 50px;
@@ -527,7 +528,7 @@ body > .header .logo {
   line-height: 50px;
   text-align: center;
   padding: 0 10px;
-  width: 220px;
+  width: 252px;
   font-family: 'Kaushan Script', cursive;
   font-weight: 500;
   height: 50px;

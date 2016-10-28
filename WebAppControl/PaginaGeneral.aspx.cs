@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WebAppControl
 {
-    public partial class index : System.Web.UI.Page
+    public partial class PaginaGeneral : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void BtnIngresar_Click1(object sender, EventArgs e)
-        {
-            Response.Redirect("PaginaGeneral.aspx");
         }
     }
 }
