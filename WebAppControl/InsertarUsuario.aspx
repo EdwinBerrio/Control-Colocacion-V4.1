@@ -87,10 +87,10 @@
                             <td>
                                 <asp:DropDownList ID="TextCargoEmpleado" runat="server" OnSelectedIndexChanged="TextCargoEmpleado_SelectedIndexChanged" Height="30px" Width="200px">
                                     <asp:ListItem Text=" " Value=" " />
-                                    <asp:ListItem Text="OPE. AUTOBOMBA" Value="10001" />
-                                    <asp:ListItem Text="OPE. ESTACIONARIA" Value="10002" />
-                                    <asp:ListItem Text="AUXILIAR  BOMBA" Value="10003" />
-                                    <asp:ListItem Text="ADMINISTRADOR" Value="10004" />
+                                    <asp:ListItem Text="OPE. AUTOBOMBA" Value="50001" />
+                                    <asp:ListItem Text="OPE. ESTACIONARIA" Value="50002" />
+                                    <asp:ListItem Text="AUXILIAR BOMBA" Value="50003" />
+                                    <asp:ListItem Text="ADMINISTRADOR" Value="50004" />
                                 </asp:DropDownList>
                                 
                             </td>
