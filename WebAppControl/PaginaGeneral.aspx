@@ -4,4 +4,5 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!--Aqui va la informacion de la pagina-->
+    <p>Hola pagina</p>
 </asp:Content>

@@ -481,6 +481,7 @@ body > .header .navbar .sidebar-toggle {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
+    height: 37px;
 }
 body > .header .navbar .sidebar-toggle:hover .icon-bar {
   background: #f6f6f6;
