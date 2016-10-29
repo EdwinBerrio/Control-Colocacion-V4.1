@@ -9,6 +9,7 @@ namespace WebAppControl
 {
     public partial class M_RegistrarUsuario : System.Web.UI.Page
     {
+        LayerBussinnes.LayerBusinnesControl oLB = new LayerBussinnes.LayerBusinnesControl();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -16,11 +17,39 @@ namespace WebAppControl
 
         protected void BtnGuardar_Click(object sender, EventArgs e)
         {
+            if (!Page.IsValid)
+            {
+                return;
+            }
+            else
+            {
+                try
+                {
+                    oLB.InsertarUsuarios(Convert.ToInt64(TextIdCodigo.Text), TextApellidos.Text, TextNombres.Text, Convert.ToDateTime(TextFechaNacimiento.Text), Convert.ToInt64(TextCargoEmpleado.Text), Convert.ToDouble(TextNumeroTelefono.Text), TextEmail.Text);
+                    // lbLMsg.Text = "Usuario Insertado Correctamante";
+                    Response.Write("<script>alert('REGISTRO CORRECTO')</script>");
+                }
+                catch 
+                {
+                    Response.Write("<script>alert('REGISTRO INCORRECTO')</script>"); 
+                }
+                finally
+                {
+                    oLB = null;
+                }
+            }
 
         }
 
         protected void BtnCancelar_Click(object sender, EventArgs e)
         {
+            TextIdCodigo.Text = "";
+            TextApellidos.Text = "";
+            TextNombres.Text = "";
+            TextFechaNacimiento.Text = "";
+            TextCargoEmpleado.SelectedIndex = 0;
+            TextNumeroTelefono.Text = "";
+            TextEmail.Text = "";
 
         }
     }

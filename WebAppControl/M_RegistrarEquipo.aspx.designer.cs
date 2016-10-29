@@ -31,13 +31,13 @@ namespace WebAppControl {
         protected global::System.Web.UI.WebControls.TextBox Text1;
         
         /// <summary>
-        /// Control Text2.
+        /// Control TextModelo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text2;
+        protected global::System.Web.UI.WebControls.TextBox TextModelo;
         
         /// <summary>
         /// Control TextMarca.

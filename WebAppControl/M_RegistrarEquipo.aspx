@@ -29,10 +29,10 @@
                         </div><!--Fin-->
                          <!--Inicio-->
                         <div class="form-group">
-                            <label>MARCA VEHICULO ---PENDIENTE---</label>
+                            <label>MODELO EQUIPO BOMBEO</label>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="Text2" runat="server" CssClass="form-control"></asp:TextBox>
+                            <asp:TextBox ID="TextModelo" runat="server" CssClass="form-control"></asp:TextBox>
                         </div><!--Fin-->
                         <!--Inicio-->
                         <div class="form-group">

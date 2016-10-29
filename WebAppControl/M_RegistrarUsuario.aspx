@@ -42,7 +42,6 @@
                         <div class="form-group">
                             <asp:TextBox ID="TextFechaNacimiento" runat="server" TextMode="date" CssClass="form-control"></asp:TextBox>
                         </div><!--Fin-->
-                        
                     </div>
                 </div>
             </div>
@@ -57,10 +56,10 @@
                         <div class="form-group">
                             <asp:DropDownList ID="TextCargoEmpleado" runat="server" CssClass="form-control">
                                 <asp:ListItem Text=" " Value=" " />
-                                    <asp:ListItem Text="OPE. AUTOBOMBA" Value="50001" />
+                                    <asp:ListItem Text="OPE. AUTOBOMBA" Value="50001"/>
                                     <asp:ListItem Text="OPE. ESTACIONARIA" Value="50002" />
-                                    <asp:ListItem Text="AUXILIAR BOMBA" Value="50003" />
-                                    <asp:ListItem Text="ADMINISTRADOR" Value="50004" />
+                                    <asp:ListItem Text="AUXILIAR BOMBA" Value="50003"/>
+                                    <asp:ListItem Text="ADMINISTRADOR" Value="50004"/>
                             </asp:DropDownList>
                         </div><!--Fin-->
                         <!--Inicio-->
@@ -89,8 +88,7 @@
                                     <asp:ListItem Text="PLANTA FONTIBON"/>
                             </asp:DropDownList>
                             <!--<asp:ListItem Text="ESTACIONARIA MONTADA" Value="1003" />-->
-                        </div><!--Fin-->
-                        
+                        </div> <!--Fin-->
                     </div>
                 </div>
             </div>
