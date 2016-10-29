@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="WebAppControl.Home" %>
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="WebAppControl.Home" %>
 
 <!DOCTYPE html>
 
