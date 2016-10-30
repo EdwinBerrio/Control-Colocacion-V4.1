@@ -255,6 +255,7 @@
     <Content Include="MostrarUsuario.aspx" />
     <Content Include="M_RegistrarEquipo.aspx" />
     <Content Include="M_RegistrarUsuario.aspx" />
+    <Content Include="M_UsuariosRegistrados.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -377,6 +378,13 @@
     </Compile>
     <Compile Include="M_RegistrarUsuario.aspx.designer.cs">
       <DependentUpon>M_RegistrarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="M_UsuariosRegistrados.aspx.cs">
+      <DependentUpon>M_UsuariosRegistrados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="M_UsuariosRegistrados.aspx.designer.cs">
+      <DependentUpon>M_UsuariosRegistrados.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaGeneral.aspx.cs">
       <DependentUpon>PaginaGeneral.aspx</DependentUpon>

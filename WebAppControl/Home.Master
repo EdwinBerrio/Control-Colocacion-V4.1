@@ -61,6 +61,12 @@
                             <span> Registo Equipos</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="M_UsuariosRegistrados.aspx">
+                            <i class="fa fa-th"></i>
+                            <span> Usuarios Registrados</span>
+                        </a>
+                    </li>
                 </ul>
             </section>
         </aside>

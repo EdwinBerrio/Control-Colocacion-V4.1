@@ -41,7 +41,11 @@ namespace WebAppControl
 
         protected void BtnCancelar_Click(object sender, EventArgs e)
         {
-
+            TextCodigoBomba.Text = "";
+            TextMarca.Text = "";
+            TextModelo.Text = "";
+            TextTipoBomba.SelectedIndex = 0;
+            TextAlcance.Text = "";
         }
     }
 }
