@@ -12,8 +12,18 @@ namespace WebAppControl
         LayerBussinnes.LayerBusinnesControl oLB = new LayerBussinnes.LayerBusinnesControl();
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (!IsPostBack)
+            {  // invocamos el metodo llenardatos
+                CargarDatos();
+            }
 
+        }
+        public void CargarDatos()
+        {
+            GridView1.DataSource = oLB.MostrarUsuario();
+            GridView1.DataBind();
+            // DataSource cargar datos
+            // DataBind refrescar o actualizar datos..
         }
         protected void BtnGuardar_Click(object sender, EventArgs e)
         {

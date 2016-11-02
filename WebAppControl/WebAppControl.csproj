@@ -253,6 +253,8 @@
     <Content Include="MostrarEquipoBomb.aspx" />
     <Content Include="MostrarProduccion.aspx" />
     <Content Include="MostrarUsuario.aspx" />
+    <Content Include="M_ActualizarUsuario.aspx" />
+    <Content Include="M_ActuElimUsuario.aspx" />
     <Content Include="M_RegistrarEquipo.aspx" />
     <Content Include="M_RegistrarUsuario.aspx" />
     <Content Include="M_UsuariosRegistrados.aspx" />
@@ -364,6 +366,20 @@
     </Compile>
     <Compile Include="MostrarUsuario.aspx.designer.cs">
       <DependentUpon>MostrarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="M_ActualizarUsuario.aspx.cs">
+      <DependentUpon>M_ActualizarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="M_ActualizarUsuario.aspx.designer.cs">
+      <DependentUpon>M_ActualizarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="M_ActuElimUsuario.aspx.cs">
+      <DependentUpon>M_ActuElimUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="M_ActuElimUsuario.aspx.designer.cs">
+      <DependentUpon>M_ActuElimUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="M_RegistrarEquipo.aspx.cs">
       <DependentUpon>M_RegistrarEquipo.aspx</DependentUpon>

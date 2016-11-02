@@ -44,7 +44,7 @@
               </div>
                 <ul class="sidebar-menu">
                     <li class="active">
-                        <a href="#">
+                        <a href="PaginaGeneral.aspx">
                             <i class="fa fa-dashboard"></i>
                             <span>Panel General</span>
                         </a>
@@ -65,6 +65,12 @@
                         <a href="M_UsuariosRegistrados.aspx">
                             <i class="fa fa-th"></i>
                             <span> Usuarios Registrados</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="M_ActualizarUsuario.aspx">
+                            <i class="fa fa-th"></i>
+                            <span>Actualizar Usuarios</span>
                         </a>
                     </li>
                 </ul>

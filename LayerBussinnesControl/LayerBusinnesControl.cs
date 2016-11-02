@@ -119,13 +119,12 @@ namespace LayerBussinnes
                 DAle = null;
             }
         }
-
-        //metodo MostrarServiciosXusuario()
-        public DataSet ConsultaProduccionXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
+        //  Metodo SpBuscar Usuario() para enlazar con el SP.
+        public DataSet ActualizarUsuarioControl(Int64 BIdCodigo)
         {
             try
             {
-                return DAle.ConsultaProduccionXusuario(PIdOperario, PFechaServicio, PFechaFinal);
+                return DAle.BuscarUsuario(BIdCodigo);
             }
             catch (Exception)
             {
@@ -136,6 +135,23 @@ namespace LayerBussinnes
                 DAle = null;
             }
         }
+
+        //metodo MostrarServiciosXusuario()
+        //public DataSet ConsultaProduccionXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
+        //{
+        //    try
+        //    {
+        //       // return DAle.InsertarEquipoBombeo(PIdOperario, PFechaServicio, PFechaFinal);
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw;
+        //    }
+        //    finally
+        //    {
+        //        DAle = null;
+        //    }
+        //}
 
 
     }

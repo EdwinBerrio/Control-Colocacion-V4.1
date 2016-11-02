@@ -89,11 +89,8 @@
 
                     <h3 id="titulosFormu2"> TOTAL M3 COLOCADOS</h3>
                     
-                    <asp:GridView ID="GridViewTotal" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataSourceID="SqlDataSourceTotal" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" Height="30px" Width="156px">
+                    <asp:GridView ID="GridViewTotal" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataSourceID="SqlDataSourceProduccionXUsuario" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" Height="30px" Width="156px">
                         <AlternatingRowStyle BackColor="#DCDCDC" />
-                        <Columns>
-                            <asp:BoundField DataField="Total produccion" HeaderText="TOTAL M3 " ReadOnly="True" SortExpression="Total produccion" />
-                        </Columns>
                         <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                         <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
                         <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />

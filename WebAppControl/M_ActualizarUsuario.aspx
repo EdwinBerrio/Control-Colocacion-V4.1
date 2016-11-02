@@ -1,14 +1,29 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="M_RegistrarUsuario.aspx.cs" Inherits="WebAppControl.M_RegistrarUsuario" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="M_ActualizarUsuario.aspx.cs" Inherits="WebAppControl.M_ActualizarUsuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="css/Style1.css" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <div class="row"> 
+            <div >
+                <table>
+                    <tr>
+                        <td>
+                            <asp:Button ID="BtnBuscar" runat="server" CssClass="btn btn-primary" Text="Buscar" Width="200px" OnClick="BtnBuscar_Click"/>
+                        </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
 
-    <section class="content-header">
-        <div class="row">
-            <h1 style="text-align:center">REGISTRO DE USUARIO</h1>
-        </div>
-    </section>
+                    <tr>
+                        <td>
+                         <div class="form-group">
+                            <asp:TextBox ID="TextBIdCodigo" runat="server"  CssClass="form-control"></asp:TextBox>
+                        </div>
+                            
+                        </td>
+
+                    </tr>
+                </table>
+             </div>
+         </div>
     <section class="content">
         <div class="row">
             <!--PRIMER CUADRO-->
@@ -96,11 +111,11 @@
         </div>
         <!--BOTONES-->
         <div class="row"> 
-            <div align="center">
+            <div > <!--align="center"-->
                 <table>
                     <tr>
                         <td>
-                            <asp:Button ID="BtnGuardar" runat="server" CssClass="btn btn-primary" Text="Registrar" Width="200px" OnClick="BtnGuardar_Click"/>
+                            <asp:Button ID="BtnActualizar" runat="server" CssClass="btn btn-primary" Text="Actualizar" Width="200px" OnClick="BtnActualizar_Click"/>
                         </td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                         <td>

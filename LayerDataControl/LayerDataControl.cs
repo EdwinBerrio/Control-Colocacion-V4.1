@@ -217,49 +217,21 @@ namespace LayerData
             }
         }
 
-        // Metodo MostrarProduccion() para enlazar con el SP.
-        //public DataTable MostrarServiciosXusuario()
-        //{
-        //    using (SqlConnection cnx = new SqlConnection(strconn))
-        //    {
-        //        cnx.Open();
-        //        SqlDataAdapter dAd = new SqlDataAdapter("SpServiciosXusuario", cnx);
-        //        dAd.SelectCommand.CommandType = CommandType.StoredProcedure;
-        //        dAd.par
-
-        //        DataSet ds = new DataSet();
-        //        try
-        //        {
-        //            dAd.Fill(ds, "TableServicioXUsuario");
-        //            return ds.Tables["TableServicioXUsuario"];
-        //        }
-        //        catch (Exception)
-        //        {
-        //            throw;
-        //        }
-        //        finally
-        //        {
-        //            cnx.Close();
-        //            cnx.Dispose();
-        //            dAd.Dispose();
-        //            ds.Dispose();
-        //        }
-        //    }
-        //}
-
-        public DataSet ConsultaProduccionXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
+        //Metodo SpBuscar Usuario() para enlazar con el SP.
+        public DataSet BuscarUsuario(Int64 BIdCodigo)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
                 cnx.Open();
-                SqlCommand com = new SqlCommand("SpConsultaProduccionXusuario", cnx);
+                SqlCommand com = new SqlCommand("SpBuscar", cnx);
                 com.CommandType = CommandType.StoredProcedure;
-                com.Parameters.AddWithValue("@IdOperario", PIdOperario);
-                com.Parameters.AddWithValue("@FechaServicio", PFechaServicio);
-                com.Parameters.AddWithValue("@FechaFinal", PFechaFinal);
+                com.Parameters.AddWithValue("@IdCodigo", BIdCodigo);
                 SqlDataAdapter ad = new SqlDataAdapter(com);
+                SqlDataReader leer = com.ExecuteReader();
+                if (leer.Read() == true)
+                {
 
-
+                }
                 DataSet d = new DataSet();
 
                 try
@@ -279,8 +251,46 @@ namespace LayerData
                     d.Dispose();
                 }
 
-               // return d;
+                //return d;
             }
+
+            //   }
+            //}
+
+            //public DataSet ConsultaProduccionXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
+            //{
+            //    using (SqlConnection cnx = new SqlConnection(strconn))
+            //    {
+            //        cnx.Open();
+            //        SqlCommand com = new SqlCommand("SpConsultaProduccionXusuario", cnx);
+            //        com.CommandType = CommandType.StoredProcedure;
+            //        com.Parameters.AddWithValue("@IdOperario", PIdOperario);
+            //        com.Parameters.AddWithValue("@FechaServicio", PFechaServicio);
+            //        com.Parameters.AddWithValue("@FechaFinal", PFechaFinal);
+            //        SqlDataAdapter ad = new SqlDataAdapter(com);
+
+
+            //        DataSet d = new DataSet();
+
+            //        try
+            //        {
+            //            ad.Fill(d);
+            //            return d;
+            //        }
+            //        catch (Exception)
+            //        {
+            //            throw;
+            //        }
+            //        finally
+            //        {
+            //            cnx.Close();
+            //            cnx.Dispose();
+            //            com.Dispose();
+            //            d.Dispose();
+            //        }
+
+            //        //return d;
+            //    }
+            //}
         }
-    }
-}
+        }
