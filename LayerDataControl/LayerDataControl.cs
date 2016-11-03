@@ -16,7 +16,7 @@ namespace LayerData
 
         //string de conexion AZURE
         //public string strconn = @"Data Source=controlcolocaciondemezclasservidor.database.windows.net;Initial Catalog=BDcontrol3;Persist Security Info=True;User ID=BDcontrol3; Password=BDcontrol.2016";
-                                 
+
         //"Data Source=servnominaesne.database.windows.net;Initial Catalog=BDNomina3;Persist Security Info=True;User ID=servnomina2;Password=Nomina123."; Password=BDcontrol.2016 // controlcolocaciondemezclasservidor.database.windows.net
         //metodo constructor
         public LayerDataControl() { }
@@ -218,7 +218,7 @@ namespace LayerData
         }
 
         //Metodo SpBuscar Usuario() para enlazar con el SP.
-        public DataSet BuscarUsuario(Int64 BIdCodigo)
+        public DataSet ActualBuscarUsuario(Int64 BIdCodigo)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
@@ -292,5 +292,7 @@ namespace LayerData
             //        //return d;
             //    }
             //}
+
         }
-        }
+    }
+}

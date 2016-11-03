@@ -120,11 +120,11 @@ namespace LayerBussinnes
             }
         }
         //  Metodo SpBuscar Usuario() para enlazar con el SP.
-        public DataSet ActualizarUsuarioControl(Int64 BIdCodigo)
+        public DataSet ActualBuscarUsuario(Int64 BIdCodigo)
         {
             try
             {
-                return DAle.BuscarUsuario(BIdCodigo);
+                return DAle.ActualBuscarUsuario(BIdCodigo);
             }
             catch (Exception)
             {
