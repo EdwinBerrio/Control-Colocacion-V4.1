@@ -217,42 +217,42 @@ namespace LayerData
             }
         }
 
-        //Metodo SpBuscar Usuario() para enlazar con el SP.
-        public DataSet ActualBuscarUsuario(Int64 BIdCodigo)
-        {
-            using (SqlConnection cnx = new SqlConnection(strconn))
-            {
-                cnx.Open();
-                SqlCommand com = new SqlCommand("SpBuscar", cnx);
-                com.CommandType = CommandType.StoredProcedure;
-                com.Parameters.AddWithValue("@IdCodigo", BIdCodigo);
-                SqlDataAdapter ad = new SqlDataAdapter(com);
-                SqlDataReader leer = com.ExecuteReader();
-                if (leer.Read() == true)
-                {
+        ////Metodo SpBuscar Usuario() para enlazar con el SP.
+        //public DataSet ActualBuscarUsuario(Int64 BIdCodigo)
+        //{
+        //    using (SqlConnection cnx = new SqlConnection(strconn))
+        //    {
+        //        cnx.Open();
+        //        SqlCommand com = new SqlCommand("SpBuscar", cnx);
+        //        com.CommandType = CommandType.StoredProcedure;
+        //        com.Parameters.AddWithValue("@IdCodigo", BIdCodigo);
+        //        SqlDataAdapter ad = new SqlDataAdapter(com);
+        //        SqlDataReader leer = com.ExecuteReader();
+        //        if (leer.Read() == true)
+        //        {
 
-                }
-                DataSet d = new DataSet();
+        //        }
+        //        DataSet d = new DataSet();
 
-                try
-                {
-                    ad.Fill(d);
-                    return d;
-                }
-                catch (Exception)
-                {
-                    throw;
-                }
-                finally
-                {
-                    cnx.Close();
-                    cnx.Dispose();
-                    com.Dispose();
-                    d.Dispose();
-                }
+        //        try
+        //        {
+        //            ad.Fill(d);
+        //            return d;
+        //        }
+        //        catch (Exception)
+        //        {
+        //            throw;
+        //        }
+        //        finally
+        //        {
+        //            cnx.Close();
+        //            cnx.Dispose();
+        //            com.Dispose();
+        //            d.Dispose();
+        //        }
 
-                //return d;
-            }
+        //        //return d;
+        //    }
 
             //   }
             //}
@@ -293,6 +293,6 @@ namespace LayerData
             //    }
             //}
 
-        }
+        //}
     }
 }

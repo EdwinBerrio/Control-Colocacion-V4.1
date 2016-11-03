@@ -2,27 +2,29 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <section class="content-header">
+         <div class="row">
+        <h1 style="text-align:center">ACTUALIZAR USUARIO</h1>
+        </div>
+    </section>
      <div class="row"> 
-            <div >
+           <div align="center">
                 <table>
                     <tr>
                         <td>
-                            <asp:Button ID="BtnBuscar" runat="server" CssClass="btn btn-primary" Text="Buscar" Width="200px" OnClick="BtnBuscar_Click"/>
-                        </td>
+                            <div class="form-group">
+                                <asp:TextBox ID="TextBIdCodigo" runat="server"  CssClass="form-control"></asp:TextBox>
+                            </div>
+                        </td>   
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                         <div class="form-group">
-                            <asp:TextBox ID="TextBIdCodigo" runat="server"  CssClass="form-control"></asp:TextBox>
-                        </div>
-                            
-                        </td>
-
+                         <td> 
+                             <div class="form-group">
+                                 <asp:Button ID="BtnBuscar" runat="server" CssClass="btn btn-primary" Text="Buscar" Width="200px" OnClick="BtnBuscar_Click"/>
+                             </div>
+                        </td>                     
                     </tr>
                 </table>
-             </div>
+             </div>  
          </div>
     <section class="content">
         <div class="row">
@@ -56,7 +58,7 @@
                             <label>FECHA DE NACIMIENTO</label>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="TextFechaNacimiento" runat="server" TextMode="date" CssClass="form-control"></asp:TextBox>
+                            <asp:TextBox ID="TextFechaNacimiento" runat="server" CssClass="form-control" ></asp:TextBox>
                         </div><!--Fin-->
                     </div>
                 </div>
@@ -111,7 +113,7 @@
         </div>
         <!--BOTONES-->
         <div class="row"> 
-            <div > <!--align="center"-->
+            <div align="center"> 
                 <table>
                     <tr>
                         <td>

@@ -11,6 +11,8 @@ namespace WebAppControl
 {
     public partial class M_ActualizarUsuario : System.Web.UI.Page
     {
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0PR0TLI;Initial Catalog = BDControlColocacion; Integrated Security = True");
+        
         protected void Page_Load(object sender, EventArgs e)
         {
            
@@ -28,8 +30,28 @@ namespace WebAppControl
 
         protected void BtnBuscar_Click(object sender, EventArgs e)
         {
+            string cadSql = "Select * from Usuario where IdCodigo='" + TextBIdCodigo.Text+" '";
+            SqlCommand comando = new SqlCommand(cadSql, con);
+            con.Open();
 
+            SqlDataReader leer = comando.ExecuteReader();
+            if (leer.Read()==true)
+            {
+                //Response.Write("<script>alert('USUARIO ESCORRECTO')</script>");
+                TextIdCodigo.Text = leer["IdCodigo"].ToString();
+                TextApellidos.Text = leer["Apellidos"].ToString();
+                TextNombres.Text = leer["Nombres"].ToString();
+                TextFechaNacimiento.Text = leer["FechaNacimiento"].ToString();  
+                TextCargoEmpleado.Text = leer["CargoEmpleado"].ToString();
+                TextNumeroTelefono.Text = leer["NumeroTelefono"].ToString();
+                TextEmail.Text = leer["Email"].ToString();
 
+            }
+            else
+            {
+                Response.Write("<script>alert('USUARIO NO ES CORRECTO')</script>");
+
+            }
         }
         
     }

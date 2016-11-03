@@ -119,22 +119,22 @@ namespace LayerBussinnes
                 DAle = null;
             }
         }
-        //  Metodo SpBuscar Usuario() para enlazar con el SP.
-        public DataSet ActualBuscarUsuario(Int64 BIdCodigo)
-        {
-            try
-            {
-                return DAle.ActualBuscarUsuario(BIdCodigo);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            finally
-            {
-                DAle = null;
-            }
-        }
+        ////  Metodo SpBuscar Usuario() para enlazar con el SP.
+        //public DataSet ActualBuscarUsuario(Int64 BIdCodigo)
+        //{
+        //    try
+        //    {
+        //        return DAle.ActualBuscarUsuario(BIdCodigo);
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw;
+        //    }
+        //    finally
+        //    {
+        //        DAle = null;
+        //    }
+        //}
 
         //metodo MostrarServiciosXusuario()
         //public DataSet ConsultaProduccionXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
