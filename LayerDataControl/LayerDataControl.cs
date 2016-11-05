@@ -12,7 +12,7 @@ namespace LayerData
     public class LayerDataControl
     {
         ////string de conexion
-        public string strconn = @"Data Source=DESKTOP-0PR0TLI;Initial Catalog = BDControlColocacion; Integrated Security = True";
+        public string strconn = @"Data Source=SCHNEIDER;Initial Catalog=BDControlColocacion1;Integrated Security=True";
 
         //string de conexion AZURE
         //public string strconn = @"Data Source=controlcolocaciondemezclasservidor.database.windows.net;Initial Catalog=BDcontrol3;Persist Security Info=True;User ID=BDcontrol3; Password=BDcontrol.2016";
