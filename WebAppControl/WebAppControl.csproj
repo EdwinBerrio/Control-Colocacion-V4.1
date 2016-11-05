@@ -122,7 +122,6 @@
     <Content Include="Imagen\user2.jpg" />
     <Content Include="index.aspx" />
     <Content Include="InserProduccion.aspx" />
-    <Content Include="InsertarUsuario.aspx" />
     <Content Include="InsertEquipoBombeo.aspx" />
     <Content Include="js\AdminLTE\app.js" />
     <Content Include="js\AdminLTE\dashboard.js" />
@@ -248,7 +247,6 @@
     <Content Include="js\plugins\sparkline\jquery.sparkline.min.js" />
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.min.js" />
-    <Content Include="Login.aspx" />
     <Content Include="menu.aspx" />
     <Content Include="MostrarEquipoBomb.aspx" />
     <Content Include="MostrarProduccion.aspx" />
@@ -318,26 +316,12 @@
     <Compile Include="InserProduccion.aspx.designer.cs">
       <DependentUpon>InserProduccion.aspx</DependentUpon>
     </Compile>
-    <Compile Include="InsertarUsuario.aspx.cs">
-      <DependentUpon>InsertarUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="InsertarUsuario.aspx.designer.cs">
-      <DependentUpon>InsertarUsuario.aspx</DependentUpon>
-    </Compile>
     <Compile Include="InsertEquipoBombeo.aspx.cs">
       <DependentUpon>InsertEquipoBombeo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="InsertEquipoBombeo.aspx.designer.cs">
       <DependentUpon>InsertEquipoBombeo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="menu.aspx.cs">
       <DependentUpon>menu.aspx</DependentUpon>

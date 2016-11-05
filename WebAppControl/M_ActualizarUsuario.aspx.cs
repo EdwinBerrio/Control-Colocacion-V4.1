@@ -50,7 +50,13 @@ namespace WebAppControl
             else
             {
                 Response.Write("<script>alert('USUARIO NO ES CORRECTO')</script>");
-
+                TextIdCodigo.Text = " ";
+                TextApellidos.Text = " ";
+                TextNombres.Text = " ";
+                TextFechaNacimiento.Text = " ";
+                TextCargoEmpleado.Text = " ";
+                TextNumeroTelefono.Text = " ";
+                TextEmail.Text = " ";
             }
         }
         
