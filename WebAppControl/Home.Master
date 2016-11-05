@@ -9,6 +9,7 @@
     <title>CONTROL Y COLOCACION DE MESCLAZ</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+     <link rel="stylesheet" href="css/Style1.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=no"/>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
