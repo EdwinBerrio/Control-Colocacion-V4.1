@@ -84,7 +84,41 @@ namespace LayerData
                 }
             }
         }
+        // METODO ACTUALIZAR USUARIO
+        public int ActualizarUsuario(Int64 IdCodigo, string Apellidos, string Nombre, DateTime FechaNacimiento, Int64 CargoEmpleado, double NumeroTelefono, string Email)
+        {
+            using (SqlConnection cnx = new SqlConnection(strconn))
+            {
+                //conexion a la base de datos
+                cnx.Open();
+                SqlCommand OrdenSql = new SqlCommand("SpEditarUsu", cnx);
+                OrdenSql.CommandType = CommandType.StoredProcedure;
+                //loque se va a ejecutar para validar si no prosigue
+                try
+                {
+                    OrdenSql.Parameters.AddWithValue("@IdCodigo", IdCodigo);
+                    OrdenSql.Parameters.AddWithValue("@Apellidos", Apellidos);
+                    OrdenSql.Parameters.AddWithValue("@Nombres", Nombre);
+                    OrdenSql.Parameters.AddWithValue("@FechaNacimiento", FechaNacimiento);
+                    OrdenSql.Parameters.AddWithValue("@CargoEmpleado", CargoEmpleado);
+                    OrdenSql.Parameters.AddWithValue("@NumeroTelefono", NumeroTelefono);
+                    OrdenSql.Parameters.AddWithValue("@Email", Email);
 
+                    return OrdenSql.ExecuteNonQuery();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                finally
+                {
+                    //se cierra la conexion a la BD 
+                    cnx.Close();
+                    cnx.Dispose();
+                    OrdenSql.Dispose();
+                }
+            }
+        }
         //metodo  Insertar Produccion para enlazar con el stor procidios
         //public int InsertarProduccion(Int64 IdReport, DateTime FechaServici, string TipoBomb,string NombreObr, string NumeroPedid, double MetrosColocado, DateTime HoraInici, DateTime HoraFin)
         public int InsertarProduccion(Int64 IdReport, double IdOperar, DateTime FechaServici, string TipoBomb, double CodigoBomb, String NombreObr, string NumeroPedid, double MetrosColocado, DateTime HoraInici, DateTime HoraFin, DateTime FechaFinal)

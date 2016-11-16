@@ -11,6 +11,7 @@ namespace WebAppControl
 {
     public partial class M_ActualizarUsuario : System.Web.UI.Page
     {
+        LayerBussinnes.LayerBusinnesControl oLB = new LayerBussinnes.LayerBusinnesControl();
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0PR0TLI;Initial Catalog = BDControlColocacion; Integrated Security = True");
         
         protected void Page_Load(object sender, EventArgs e)
@@ -20,11 +21,29 @@ namespace WebAppControl
 
         protected void BtnActualizar_Click(object sender, EventArgs e)
         {
-
+            if(!Page.IsValid)
+            {
+                return;
+            }
+            else
+            {
+                //try
+                //{
+                //    oLB.ActualizarUsuario
+                //}
+            }
         }
 
         protected void BtnCancelar_Click(object sender, EventArgs e)
         {
+            TextBIdCodigo.Text = "";
+            TextIdCodigo.Text = " ";
+            TextApellidos.Text = " ";
+            TextNombres.Text = " ";
+            TextFechaNacimiento.Text = " ";
+            TextCargoEmpleado.Text = " ";
+            TextNumeroTelefono.Text = " ";
+            TextEmail.Text = " ";
 
         }
 
