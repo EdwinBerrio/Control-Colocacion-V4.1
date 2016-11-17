@@ -53,7 +53,7 @@ namespace LayerBussinnes
         {
             try
             {
-                return DAle.InsertarUsuario(IdCodigo, Apellidos, Nombres, FechaNac, CargoEmpl, NumeroTele, Email);
+                return DAle.ActualizarUsuario(IdCodigo, Apellidos, Nombres, FechaNac, CargoEmpl, NumeroTele, Email);
 
             }
             catch (Exception)

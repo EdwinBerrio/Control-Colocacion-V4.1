@@ -37,7 +37,7 @@
                             <label>NUMERO DE DOCUMENTO</label>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="TextIdCodigo" runat="server"  CssClass="form-control"></asp:TextBox>
+                            <asp:TextBox ID="TextIdCodigo" runat="server"  CssClass="form-control" ReadOnly="True"></asp:TextBox>
                         </div><!--Fin-->
                         <!--Inicio-->
                         <div class="form-group">

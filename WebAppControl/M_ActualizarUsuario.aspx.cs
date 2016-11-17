@@ -21,16 +21,25 @@ namespace WebAppControl
 
         protected void BtnActualizar_Click(object sender, EventArgs e)
         {
-            if(!Page.IsValid)
+            if (!Page.IsValid)
             {
                 return;
             }
             else
             {
-                //try
-                //{
-                //    oLB.ActualizarUsuario
-                //}
+                try
+                {
+                    oLB.ActualizarUsuario(Convert.ToInt64(TextIdCodigo.Text), TextApellidos.Text, TextNombres.Text, Convert.ToDateTime(TextFechaNacimiento.Text), Convert.ToInt64(TextCargoEmpleado.Text), Convert.ToDouble(TextNumeroTelefono.Text), TextEmail.Text);
+                    Response.Write("<script>alert('USUARIO ACTUALIZADO')</script>");
+                }
+                catch
+                {
+                    Response.Write("<script>alert('REGISTRO INCORRECTO')</script>");
+                }
+                finally
+                {
+                    oLB = null;
+                }
             }
         }
 
