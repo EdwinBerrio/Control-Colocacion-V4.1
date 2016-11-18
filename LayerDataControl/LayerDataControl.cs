@@ -90,7 +90,8 @@ namespace LayerData
             }
         }
         // METODO ACTUALIZAR USUARIO
-        public int ActualizarUsuario(Int64 IdCodigo, string Apellidos, string Nombre, DateTime FechaNacimiento, Int64 CargoEmpleado, double NumeroTelefono, string Email)
+        public int ActualizarUsuario(Int64 IdCodigo, string Apellidos, string Nombre, DateTime FechaNacimiento, Int64 CargoEmpleado,
+            double NumeroTelefono, string Email, string Planta, string UserName, string Password, string Estado)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
@@ -108,6 +109,10 @@ namespace LayerData
                     OrdenSql.Parameters.AddWithValue("@CargoEmpleado", CargoEmpleado);
                     OrdenSql.Parameters.AddWithValue("@NumeroTelefono", NumeroTelefono);
                     OrdenSql.Parameters.AddWithValue("@Email", Email);
+                    OrdenSql.Parameters.AddWithValue("@Planta", Planta);
+                    OrdenSql.Parameters.AddWithValue("@UserName", UserName);
+                    OrdenSql.Parameters.AddWithValue("@Password", Password);
+                    OrdenSql.Parameters.AddWithValue("@Estado", Estado);
 
                     return OrdenSql.ExecuteNonQuery();
                 }

@@ -45,14 +45,17 @@ namespace WebAppControl
 
         protected void BtnCancelar_Click(object sender, EventArgs e)
         {
-            TextIdCodigo.Text = "";
-            TextApellidos.Text = "";
-            TextNombres.Text = "";
-            TextFechaNacimiento.Text = "";
+            TextIdCodigo.Text = " ";
+            TextApellidos.Text = " ";
+            TextNombres.Text = " ";
+            TextFechaNacimiento.Text = " ";
             TextCargoEmpleado.SelectedIndex = 0;
-            TextNumeroTelefono.Text = "";
-            TextEmail.Text = "";
+            TextNumeroTelefono.Text = " ";
+            TextEmail.Text = " ";
+            TextPlanta.SelectedIndex = 0;
             TextUserName.Text = "";
+            TextPassword.Text = "";
+            TextEstado.SelectedIndex = 0;
 
 
         }

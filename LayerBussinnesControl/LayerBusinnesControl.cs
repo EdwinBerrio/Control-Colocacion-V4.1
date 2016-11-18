@@ -50,11 +50,12 @@ namespace LayerBussinnes
         }
 
         // Metodo Actualizar usuario
-        public int ActualizarUsuario(Int64 IdCodigo, string Apellidos, string Nombres, DateTime FechaNac, Int64 CargoEmpl, double NumeroTele, string Email)
+        public int ActualizarUsuario(Int64 IdCodigo, string Apellidos, string Nombres, DateTime FechaNac, Int64 CargoEmpl, double NumeroTele,
+            string Email, string Planta, string UserName, string Password, string Estado)
         {
             try
             {
-                return DAle.ActualizarUsuario(IdCodigo, Apellidos, Nombres, FechaNac, CargoEmpl, NumeroTele, Email);
+                return DAle.ActualizarUsuario(IdCodigo, Apellidos, Nombres, FechaNac, CargoEmpl, NumeroTele, Email, Planta, UserName, Password, Estado);
 
             }
             catch (Exception)
@@ -69,6 +70,7 @@ namespace LayerBussinnes
         //metodo que reciba los parametros y se los pase a star procidius
         // Metodo Insertar Produccion instanciar los parametros a la clase layer data
         //public int InsertarProduccion(Int64 IdReporte, DateTime FechaServicio, string TipoBomba, string NombreObra, string NumeroPedido, double MetrosColocados, DateTime HoraInicio, DateTime HoraFin)
+
         public int InsertarProduccion(Int64 IdReporte,double IdOperario, DateTime FechaServicio, string TipoBomba,double CodigoBomba, string NombreObra, string NumeroPedido , double MetrosColocados, DateTime HoraInicio, DateTime HoraFin, DateTime FechaFinal)
         {
             try

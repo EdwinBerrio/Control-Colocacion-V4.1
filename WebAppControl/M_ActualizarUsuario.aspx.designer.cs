@@ -67,6 +67,24 @@ namespace WebAppControl {
         protected global::System.Web.UI.WebControls.TextBox TextFechaNacimiento;
         
         /// <summary>
+        /// Control TextUserName.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextUserName;
+        
+        /// <summary>
+        /// Control TextPassword.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextPassword;
+        
+        /// <summary>
         /// Control TextCargoEmpleado.
         /// </summary>
         /// <remarks>
@@ -94,13 +112,22 @@ namespace WebAppControl {
         protected global::System.Web.UI.WebControls.TextBox TextEmail;
         
         /// <summary>
-        /// Control DropDownList1.
+        /// Control TextEstado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList TextEstado;
+        
+        /// <summary>
+        /// Control TextPlanta.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList TextPlanta;
         
         /// <summary>
         /// Control BtnActualizar.
