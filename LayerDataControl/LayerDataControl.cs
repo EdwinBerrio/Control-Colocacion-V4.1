@@ -12,7 +12,7 @@ namespace LayerData
     public class LayerDataControl
     {
         ////string de conexion
-        public string strconn = @"Data Source=SCHNEIDER;Initial Catalog=BDControlColocacion1;Integrated Security=True";
+        public string strconn = @"Data Source=DESKTOP-0PR0TLI;Initial Catalog=BDControlColocacion;Integrated Security=True";
 
         //string de conexion AZURE
         //public string strconn = @"Data Source=controlcolocaciondemezclasservidor.database.windows.net;Initial Catalog=BDcontrol3;Persist Security Info=True;User ID=BDcontrol3; Password=BDcontrol.2016";
@@ -22,7 +22,8 @@ namespace LayerData
         public LayerDataControl() { }
 
         //metodo  insertar empleado para enlazar con el stor procidios
-        public int InsertarUsuario(Int64 IdCodigo, string Apellidos, string Nombre, DateTime FechaNacimiento, Int64 CargoEmpleado, double NumeroTelefono, string Email)
+        public int InsertarUsuario(Int64 IdCodigo, string Apellidos, string Nombre, DateTime FechaNacimiento, Int64 CargoEmpleado,
+            double NumeroTelefono, string Email, string Planta,string UserName, string Password,string Estado)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
@@ -40,6 +41,10 @@ namespace LayerData
                     OrdenSql.Parameters.AddWithValue("@CargoEmpleado", CargoEmpleado);
                     OrdenSql.Parameters.AddWithValue("@NumeroTelefono", NumeroTelefono);
                     OrdenSql.Parameters.AddWithValue("@Email", Email);
+                    OrdenSql.Parameters.AddWithValue("@Planta", Planta);
+                    OrdenSql.Parameters.AddWithValue("@UserName", UserName);
+                    OrdenSql.Parameters.AddWithValue("@Password", Password);
+                    OrdenSql.Parameters.AddWithValue("@Estado", Estado);
 
                     return OrdenSql.ExecuteNonQuery();
                 }

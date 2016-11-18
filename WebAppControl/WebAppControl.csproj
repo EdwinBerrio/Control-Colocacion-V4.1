@@ -123,7 +123,6 @@
     <Content Include="Imagen\user2.jpg" />
     <Content Include="index.aspx" />
     <Content Include="InserProduccion.aspx" />
-    <Content Include="InsertEquipoBombeo.aspx" />
     <Content Include="js\AdminLTE\app.js" />
     <Content Include="js\AdminLTE\dashboard.js" />
     <Content Include="js\AdminLTE\demo.js" />
@@ -249,12 +248,11 @@
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="menu.aspx" />
-    <Content Include="MostrarEquipoBomb.aspx" />
     <Content Include="MostrarProduccion.aspx" />
-    <Content Include="MostrarUsuario.aspx" />
     <Content Include="M_ActualizarEquipo.aspx" />
     <Content Include="M_ActualizarUsuario.aspx" />
     <Content Include="M_ActuElimUsuario.aspx" />
+    <Content Include="M_InsetarPlanta.aspx" />
     <Content Include="M_RegistrarEquipo.aspx" />
     <Content Include="M_RegistrarUsuario.aspx" />
     <Content Include="M_UsuariosRegistrados.aspx" />
@@ -318,13 +316,6 @@
     <Compile Include="InserProduccion.aspx.designer.cs">
       <DependentUpon>InserProduccion.aspx</DependentUpon>
     </Compile>
-    <Compile Include="InsertEquipoBombeo.aspx.cs">
-      <DependentUpon>InsertEquipoBombeo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="InsertEquipoBombeo.aspx.designer.cs">
-      <DependentUpon>InsertEquipoBombeo.aspx</DependentUpon>
-    </Compile>
     <Compile Include="menu.aspx.cs">
       <DependentUpon>menu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -332,26 +323,12 @@
     <Compile Include="menu.aspx.designer.cs">
       <DependentUpon>menu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MostrarEquipoBomb.aspx.cs">
-      <DependentUpon>MostrarEquipoBomb.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MostrarEquipoBomb.aspx.designer.cs">
-      <DependentUpon>MostrarEquipoBomb.aspx</DependentUpon>
-    </Compile>
     <Compile Include="MostrarProduccion.aspx.cs">
       <DependentUpon>MostrarProduccion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MostrarProduccion.aspx.designer.cs">
       <DependentUpon>MostrarProduccion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MostrarUsuario.aspx.cs">
-      <DependentUpon>MostrarUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MostrarUsuario.aspx.designer.cs">
-      <DependentUpon>MostrarUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="M_ActualizarEquipo.aspx.cs">
       <DependentUpon>M_ActualizarEquipo.aspx</DependentUpon>
@@ -373,6 +350,13 @@
     </Compile>
     <Compile Include="M_ActuElimUsuario.aspx.designer.cs">
       <DependentUpon>M_ActuElimUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="M_InsetarPlanta.aspx.cs">
+      <DependentUpon>M_InsetarPlanta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="M_InsetarPlanta.aspx.designer.cs">
+      <DependentUpon>M_InsetarPlanta.aspx</DependentUpon>
     </Compile>
     <Compile Include="M_RegistrarEquipo.aspx.cs">
       <DependentUpon>M_RegistrarEquipo.aspx</DependentUpon>

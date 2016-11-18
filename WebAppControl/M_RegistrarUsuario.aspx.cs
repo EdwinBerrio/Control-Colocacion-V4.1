@@ -25,8 +25,10 @@ namespace WebAppControl
             {
                 try
                 {
-                    oLB.InsertarUsuarios(Convert.ToInt64(TextIdCodigo.Text), TextApellidos.Text, TextNombres.Text, Convert.ToDateTime(TextFechaNacimiento.Text), Convert.ToInt64(TextCargoEmpleado.Text), Convert.ToDouble(TextNumeroTelefono.Text), TextEmail.Text);
-                    // lbLMsg.Text = "Usuario Insertado Correctamante";
+                    oLB.InsertarUsuarios(Convert.ToInt64(TextIdCodigo.Text), TextApellidos.Text, TextNombres.Text,Convert.ToDateTime(TextFechaNacimiento.Text), 
+                        Convert.ToInt64(TextCargoEmpleado.Text), Convert.ToDouble(TextNumeroTelefono.Text),TextEmail.Text, TextPlanta.Text,TextUserName.Text, 
+                        TextPassword.Text, TextEstado.Text);
+                    
                     Response.Write("<script>alert('REGISTRO CORRECTO')</script>");
                 }
                 catch 
@@ -50,6 +52,8 @@ namespace WebAppControl
             TextCargoEmpleado.SelectedIndex = 0;
             TextNumeroTelefono.Text = "";
             TextEmail.Text = "";
+            TextUserName.Text = "";
+
 
         }
     }

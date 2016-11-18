@@ -14,11 +14,12 @@ namespace LayerBussinnes
 
         //metodo que reciba los parametros y se los pase a star procidius
         // Metodo Insertar Usuario instanciar los parametros a la clase layer data
-        public int InsertarUsuarios(Int64 IdCodigo, string Apellidos, string Nombres, DateTime FechaNac, Int64 CargoEmpl, double NumeroTele, string Email)
+        public int InsertarUsuarios(Int64 IdCodigo, string Apellidos, string Nombres, DateTime FechaNac, Int64 CargoEmpl, double NumeroTele, 
+            string Email, string Planta, string UserName, string Password, string Estado)
         {
             try
             {
-                return DAle.InsertarUsuario(IdCodigo, Apellidos, Nombres, FechaNac, CargoEmpl, NumeroTele, Email);
+                return DAle.InsertarUsuario(IdCodigo, Apellidos, Nombres, FechaNac, CargoEmpl, NumeroTele, Email, Planta, UserName, Password, Estado);
 
             }
             catch (Exception)

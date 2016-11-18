@@ -43,6 +43,18 @@
                         <div class="form-group">
                             <asp:TextBox ID="TextFechaNacimiento" runat="server" TextMode="date" CssClass="form-control"></asp:TextBox>
                         </div><!--Fin-->
+                        <div class="form-group">
+                            <label>USUARIO</label>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="TextUserName" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div><!--Fin-->
+                        <div class="form-group">
+                            <label>CONTRASEÑA</label>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="TextPassword" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div><!--Fin-->
                     </div>
                 </div>
             </div>
@@ -57,10 +69,10 @@
                         <div class="form-group">
                             <asp:DropDownList ID="TextCargoEmpleado" runat="server" CssClass="form-control">
                                 <asp:ListItem Text=" " Value=" " />
-                                    <asp:ListItem Text="OPE. AUTOBOMBA" Value="50001"/>
-                                    <asp:ListItem Text="OPE. ESTACIONARIA" Value="50002" />
-                                    <asp:ListItem Text="AUXILIAR BOMBA" Value="50003"/>
-                                    <asp:ListItem Text="ADMINISTRADOR" Value="50004"/>
+                                    <asp:ListItem Text="OPE. AUTOBOMBA" Value="101"/>
+                                    <asp:ListItem Text="OPE. ESTACIONARIA" Value="102"/>
+                                    <asp:ListItem Text="AUXILIAR BOMBA" Value="103"/>
+                                    <asp:ListItem Text="ADMINISTRADOR" Value="104"/>
                             </asp:DropDownList>
                         </div><!--Fin-->
                         <!--Inicio-->
@@ -79,16 +91,34 @@
                         </div><!--Fin-->
                         <!--Inicio-->
                         <div class="form-group">
-                            <label>ASIGNADO A PLANTA  ---PENDIENTE---</label>
+                            <label>ESTADO DEL USUARIO</label>
                         </div>
                         <div class="form-group">
-                            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control">
+                            <asp:DropDownList ID="TextEstado" runat="server" CssClass="form-control">
                                 <asp:ListItem Text=" " Value=" " />
-                                    <asp:ListItem Text="PLANTA SUR" />
-                                    <asp:ListItem Text="PLANTA BOSA"  />
-                                    <asp:ListItem Text="PLANTA FONTIBON"/>
+                                    <asp:ListItem Text="Activo" Value="A" />
+                                    <asp:ListItem Text="Inactivo" Value="I"/>
+                                    
                             </asp:DropDownList>
-                            <!--<asp:ListItem Text="ESTACIONARIA MONTADA" Value="1003" />-->
+                            
+                        </div> <!--Fin-->
+
+                        <!--Inicio-->
+                        <div class="form-group">
+                            <label>ASIGNADO A PLANTA</label>
+                        </div>
+                        <div class="form-group">
+                            <asp:DropDownList ID="TextPlanta" runat="server" CssClass="form-control">
+                                <asp:ListItem Text=" " Value=" " />
+                                    <asp:ListItem Text="PLANTA SUR" Value="P01"/>
+                                    <asp:ListItem Text="PLANTA BOSA" Value="P02"/>
+                                    <asp:ListItem Text="PLANTA FONTIBON" Value="P03"/>
+                                    <asp:ListItem Text="PLANTA SIBERIA" Value="P04"/>
+                                    <asp:ListItem Text="PLANTA DOS CUARENTA" Value="P05"/>
+                                    <asp:ListItem Text="PLANTA PUENTE ARANDA" Value="P06"/>
+                                    <asp:ListItem Text="PLANTA CIENTO SETENTA" Value="P07"/>
+                            </asp:DropDownList>
+                            
                         </div> <!--Fin-->
                     </div>
                 </div>
