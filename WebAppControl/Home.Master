@@ -64,6 +64,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="M_ActualizarEquipo.aspx">
+                            <i class="fa fa-th"></i>
+                            <span> Actualizar Equipos</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="M_UsuariosRegistrados.aspx">
                             <i class="fa fa-th"></i>
                             <span> Usuarios Registrados</span>

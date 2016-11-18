@@ -61,7 +61,7 @@ namespace WebAppControl
             string cadSql = "Select * from Usuario where IdCodigo='" + TextBIdCodigo.Text+" '";
             SqlCommand comando = new SqlCommand(cadSql, con);
             con.Open();
-
+            
             SqlDataReader leer = comando.ExecuteReader();
             if (leer.Read()==true)
             {

@@ -222,9 +222,9 @@ namespace LayerData
                 }
             }
         }
-
-        // Metodo MostrarProduccion() para enlazar con el SP.
-        public DataTable MostrarEquipoBombeo()
+    
+    // Metodo MostrarProduccion() para enlazar con el SP.
+    public DataTable MostrarEquipoBombeo()
         {
             using (SqlConnection cnxME = new SqlConnection(strconn))
             {
@@ -250,7 +250,39 @@ namespace LayerData
                 }
             }
         }
+        // Metodo Actualizar Equipo
+        public int ActualizarEquipo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance)
+        {
+            using (SqlConnection cnxAE = new SqlConnection(strconn))
+            {
+                //conexion a la base de datos
+                cnxAE.Open();
+                SqlCommand OrdenSql = new SqlCommand("SpActualiEquipo", cnxAE);
+                OrdenSql.CommandType = CommandType.StoredProcedure;
+                //loque se va a ejecutar para validar si no prosigue
+                try
+                {
+                    OrdenSql.Parameters.AddWithValue("@IdBomba", IdBomba);
+                    OrdenSql.Parameters.AddWithValue("@Marca", Marca);
+                    OrdenSql.Parameters.AddWithValue("@Modelo", Modelo);
+                    OrdenSql.Parameters.AddWithValue("@TipoBomba", TipoBomba);
+                    OrdenSql.Parameters.AddWithValue("@Alcance", Alcance);
 
+                    return OrdenSql.ExecuteNonQuery();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                finally
+                {
+                    //se cierra la conexion a la BD 
+                    cnxAE.Close();
+                    cnxAE.Dispose();
+                    OrdenSql.Dispose();
+                }
+            }
+        }
         ////Metodo SpBuscar Usuario() para enlazar con el SP.
         //public DataSet ActualBuscarUsuario(Int64 BIdCodigo)
         //{
@@ -288,44 +320,44 @@ namespace LayerData
         //        //return d;
         //    }
 
-            //   }
-            //}
+        //   }
+        //}
 
-            //public DataSet ConsultaProduccionXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
-            //{
-            //    using (SqlConnection cnx = new SqlConnection(strconn))
-            //    {
-            //        cnx.Open();
-            //        SqlCommand com = new SqlCommand("SpConsultaProduccionXusuario", cnx);
-            //        com.CommandType = CommandType.StoredProcedure;
-            //        com.Parameters.AddWithValue("@IdOperario", PIdOperario);
-            //        com.Parameters.AddWithValue("@FechaServicio", PFechaServicio);
-            //        com.Parameters.AddWithValue("@FechaFinal", PFechaFinal);
-            //        SqlDataAdapter ad = new SqlDataAdapter(com);
+        //public DataSet ConsultaProduccionXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
+        //{
+        //    using (SqlConnection cnx = new SqlConnection(strconn))
+        //    {
+        //        cnx.Open();
+        //        SqlCommand com = new SqlCommand("SpConsultaProduccionXusuario", cnx);
+        //        com.CommandType = CommandType.StoredProcedure;
+        //        com.Parameters.AddWithValue("@IdOperario", PIdOperario);
+        //        com.Parameters.AddWithValue("@FechaServicio", PFechaServicio);
+        //        com.Parameters.AddWithValue("@FechaFinal", PFechaFinal);
+        //        SqlDataAdapter ad = new SqlDataAdapter(com);
 
 
-            //        DataSet d = new DataSet();
+        //        DataSet d = new DataSet();
 
-            //        try
-            //        {
-            //            ad.Fill(d);
-            //            return d;
-            //        }
-            //        catch (Exception)
-            //        {
-            //            throw;
-            //        }
-            //        finally
-            //        {
-            //            cnx.Close();
-            //            cnx.Dispose();
-            //            com.Dispose();
-            //            d.Dispose();
-            //        }
+        //        try
+        //        {
+        //            ad.Fill(d);
+        //            return d;
+        //        }
+        //        catch (Exception)
+        //        {
+        //            throw;
+        //        }
+        //        finally
+        //        {
+        //            cnx.Close();
+        //            cnx.Dispose();
+        //            com.Dispose();
+        //            d.Dispose();
+        //        }
 
-            //        //return d;
-            //    }
-            //}
+        //        //return d;
+        //    }
+        //}
 
         //}
     }

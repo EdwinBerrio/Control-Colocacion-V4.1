@@ -121,12 +121,45 @@ namespace LayerBussinnes
             }
         }
 
+        
+        //public int BuscarEquipoBombeo() //Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance
+        //{
+        //    try
+        //    {
+        //        return DAle.BuscarEquipo();
+        //        //(IdBomba, Marca, Modelo, TipoBomba, Alcance);
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw;
+        //    }
+        //    finally
+        //    {
+        //        DAle = null;
+        //    }
+        //}
         //metodo MostrarEquipoBombeo()
         public DataTable MostrarEquipoBombeo()
         {
             try
             {
                 return DAle.MostrarEquipoBombeo();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                DAle = null;
+            }
+        }
+        // Metodo Actualizar Equipo
+        public int ActualizarEquipoB(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance)
+        {
+            try
+            {
+                return DAle.ActualizarEquipo(IdBomba, Marca, Modelo, TipoBomba, Alcance);// Retorna a LayerData
             }
             catch (Exception)
             {
