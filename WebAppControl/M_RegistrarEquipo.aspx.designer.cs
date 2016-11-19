@@ -22,13 +22,13 @@ namespace WebAppControl {
         protected global::System.Web.UI.WebControls.TextBox TextCodigoBomba;
         
         /// <summary>
-        /// Control Text1.
+        /// Control TextEstado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text1;
+        protected global::System.Web.UI.WebControls.DropDownList TextEstado;
         
         /// <summary>
         /// Control TextModelo.
@@ -76,13 +76,13 @@ namespace WebAppControl {
         protected global::System.Web.UI.WebControls.TextBox TextBox4;
         
         /// <summary>
-        /// Control DropDownList1.
+        /// Control TextPlanta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList TextPlanta;
         
         /// <summary>
         /// Control BtnGuardar.

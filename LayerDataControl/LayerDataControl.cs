@@ -200,7 +200,7 @@ namespace LayerData
         }
 
         //metodo  Insertar EquipoBombeo para enlazar con el stor procidios
-        public int InsertarEquipoBombeo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance)
+        public int InsertarEquipoBombeo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance, string Planta, string Estado)
         {
             using (SqlConnection cnxEB = new SqlConnection(strconn))
             {
@@ -216,6 +216,8 @@ namespace LayerData
                     OrdenSql.Parameters.AddWithValue("@Modelo", Modelo);
                     OrdenSql.Parameters.AddWithValue("@TipoBomba", TipoBomba);
                     OrdenSql.Parameters.AddWithValue("@Alcance", Alcance);
+                    OrdenSql.Parameters.AddWithValue("@Planta", Planta);
+                    OrdenSql.Parameters.AddWithValue("@Estado", Estado);
 
                     return OrdenSql.ExecuteNonQuery();
                 }
@@ -261,7 +263,7 @@ namespace LayerData
             }
         }
         // Metodo Actualizar Equipo
-        public int ActualizarEquipo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance)
+        public int ActualizarEquipo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance,string Planta,string Estado)
         {
             using (SqlConnection cnxAE = new SqlConnection(strconn))
             {
@@ -277,6 +279,8 @@ namespace LayerData
                     OrdenSql.Parameters.AddWithValue("@Modelo", Modelo);
                     OrdenSql.Parameters.AddWithValue("@TipoBomba", TipoBomba);
                     OrdenSql.Parameters.AddWithValue("@Alcance", Alcance);
+                    OrdenSql.Parameters.AddWithValue("@Planta", Planta);
+                    OrdenSql.Parameters.AddWithValue("@Estado", Estado);
 
                     return OrdenSql.ExecuteNonQuery();
                 }

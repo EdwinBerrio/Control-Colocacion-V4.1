@@ -11,7 +11,7 @@ namespace WebAppControl
     public partial class M_ActualizarEquipo : System.Web.UI.Page
     {
         LayerBussinnes.LayerBusinnesControl oLB = new LayerBussinnes.LayerBusinnesControl();
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0PR0TLI;Initial Catalog = BDControlColocacion; Integrated Security = True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0PR0TLI;Initial Catalog=BDControlColocacion;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -26,17 +26,17 @@ namespace WebAppControl
             SqlDataReader leer = comando.ExecuteReader();
             if (leer.Read() == true)
             {
-                //Response.Write("<script>alert('EQUIPO ES CORRECTO')</script>");
+                Response.Write("<script>alert('EQUIPO ES CORRECTO')</script>");
                 //TextCodigoBomb.Text = leer["CodigoBomb"].ToString();
                 TextIdBomba.Text = leer["IdBomba"].ToString();
-                //Text1.Text = "";
+                TextEstado.Text = leer["Estado"].ToString();
                 TextModelo.Text = leer["Modelo"].ToString();
                 TextMarca.Text = leer["Marca"].ToString();
                 TextTipoBomba.Text = leer["TipoBomba"].ToString();
                 TextAlcance.Text = leer["Alcance"].ToString();
                 //TextBox4.Text = "";
-                //DropDownList1.Text = leer["Marca"].ToString();
-                
+                TextPlanta.Text = leer["Planta"].ToString();
+
 
             }
             else
@@ -44,13 +44,13 @@ namespace WebAppControl
                 Response.Write("<script>alert('USUARIO NO ES CORRECTO')</script>");
                 TextCodigoBomb.Text = "";
                 TextIdBomba.Text = "";
-                Text1.Text = "";
+                TextEstado.SelectedIndex = 0;
                 TextModelo.Text = "";
                 TextMarca.Text = "";
                 TextTipoBomba.Text = "";
                 TextAlcance.Text = "";
                 TextBox4.Text = "";
-                DropDownList1.Text = "";
+                TextPlanta.SelectedIndex = 0;
             }
         }
        
@@ -64,7 +64,8 @@ namespace WebAppControl
             {
                 try
                 {
-                    oLB.ActualizarEquipoB(Convert.ToInt64(TextIdBomba.Text), TextMarca.Text, Convert.ToDouble(TextModelo.Text), Convert.ToInt64(TextTipoBomba.Text), Convert.ToDouble(TextAlcance.Text));
+                    oLB.ActualizarEquipoB(Convert.ToInt64(TextIdBomba.Text), TextMarca.Text, Convert.ToDouble(TextModelo.Text), Convert.ToInt64(TextTipoBomba.Text), Convert.ToDouble(TextAlcance.Text), 
+                        TextEstado.Text, TextPlanta.Text);
                     Response.Write("<script>alert('EQUIPO ACTUALIZADO')</script>");
                 }
                 catch
@@ -83,13 +84,13 @@ namespace WebAppControl
         {
             TextCodigoBomb.Text = "";
             TextIdBomba.Text = "";
-            Text1.Text = "";
+            TextEstado.SelectedIndex = 0;
             TextModelo.Text = "";
             TextMarca.Text = "";
             TextTipoBomba.Text = "";
             TextAlcance.Text = "";
             TextBox4.Text = "";
-            DropDownList1.Text = "";
+            TextPlanta.SelectedIndex = 0;
 
         }
     }

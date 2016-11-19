@@ -108,11 +108,11 @@ namespace LayerBussinnes
         //metodo que reciba los parametros y se los pase a star procidius
         // Metodo Insertar Produccion instanciar los parametros a la clase layer data
         //public int InsertarProduccion(Int64 IdReporte, DateTime FechaServicio, string TipoBomba, string NombreObra, string NumeroPedido, double MetrosColocados, DateTime HoraInicio, DateTime HoraFin)
-        public int InsertarEquipoBombeo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance)
+        public int InsertarEquipoBombeo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance, string Planta, string Estado)
         {
             try
             {
-                return DAle.InsertarEquipoBombeo(IdBomba,Marca,Modelo,TipoBomba,Alcance);
+                return DAle.InsertarEquipoBombeo(IdBomba,Marca,Modelo,TipoBomba,Alcance,Planta,Estado);
             }
             catch (Exception)
             {
@@ -158,11 +158,11 @@ namespace LayerBussinnes
             }
         }
         // Metodo Actualizar Equipo
-        public int ActualizarEquipoB(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance)
+        public int ActualizarEquipoB(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance, string Estados, string Plantas)
         {
             try
             {
-                return DAle.ActualizarEquipo(IdBomba, Marca, Modelo, TipoBomba, Alcance);// Retorna a LayerData
+                return DAle.ActualizarEquipo(IdBomba, Marca, Modelo, TipoBomba, Alcance, Estados, Plantas);// Retorna a LayerData
             }
             catch (Exception)
             {

@@ -25,6 +25,10 @@
                     <asp:BoundField DataField="CargoEmpleado" HeaderText="Cargo " />
                     <asp:BoundField DataField="NumeroTelefono" HeaderText="Telefono" />
                     <asp:BoundField DataField="Email" HeaderText="Email" />
+                    <asp:BoundField DataField="Planta" HeaderText="Planta" />
+                    <asp:BoundField DataField="UserName" HeaderText="Usuario" />
+                    <asp:BoundField DataField="Estado" HeaderText="Estado" />
+                    
                 </Columns>
             </asp:GridView>
          </div>

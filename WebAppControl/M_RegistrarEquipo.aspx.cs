@@ -25,12 +25,13 @@ namespace WebAppControl
             {
                 try
                 {
-                    oLB.InsertarEquipoBombeo(Convert.ToInt64(TextCodigoBomba.Text), TextMarca.Text, Convert.ToDouble(TextModelo.Text), Convert.ToInt64(TextTipoBomba.Text), Convert.ToDouble(TextAlcance.Text));
+                    oLB.InsertarEquipoBombeo(Convert.ToInt64(TextCodigoBomba.Text), TextMarca.Text, Convert.ToDouble(TextModelo.Text), Convert.ToInt64(TextTipoBomba.Text), 
+                        Convert.ToDouble(TextAlcance.Text), TextEstado.Text, TextPlanta.Text);
                     Response.Write("<script>alert('REGISTRO CORRECTO')</script>");
                 }
                 catch 
                 {
-                    Response.Write("<script>alert('REGISTRO CORRECTO')</script>");
+                    Response.Write("<script>alert('REGISTRO NO A SIDO GUARDADO')</script>");
                 }
                 finally
                 {
@@ -46,6 +47,9 @@ namespace WebAppControl
             TextModelo.Text = "";
             TextTipoBomba.SelectedIndex = 0;
             TextAlcance.Text = "";
+            TextEstado.SelectedIndex = 0;
+            TextPlanta.SelectedIndex = 0;
+
         }
     }
 }
