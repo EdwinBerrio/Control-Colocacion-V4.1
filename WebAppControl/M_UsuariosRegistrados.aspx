@@ -22,10 +22,10 @@
                     <asp:BoundField DataField="Apellidos" HeaderText="Apellidos" />
                     <asp:BoundField DataField="Nombres" HeaderText="Nombres" />
                     <asp:BoundField DataField="FechaNacimiento" HeaderText="Fecha Nacimiento" />
-                    <asp:BoundField DataField="CargoEmpleado" HeaderText="Cargo " />
+                    <asp:BoundField DataField="DescriccionCargo" HeaderText="Cargo " />
                     <asp:BoundField DataField="NumeroTelefono" HeaderText="Telefono" />
                     <asp:BoundField DataField="Email" HeaderText="Email" />
-                    <asp:BoundField DataField="Planta" HeaderText="Planta" />
+                    <asp:BoundField DataField="Descriccion" HeaderText="Planta" />
                     <asp:BoundField DataField="UserName" HeaderText="Usuario" />
                     <asp:BoundField DataField="Estado" HeaderText="Estado" />
                     

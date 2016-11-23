@@ -64,7 +64,7 @@ namespace WebAppControl
             {
                 try
                 {
-                    oLB.ActualizarEquipoB(Convert.ToInt64(TextIdBomba.Text), TextMarca.Text, Convert.ToDouble(TextModelo.Text), Convert.ToInt64(TextTipoBomba.Text), Convert.ToDouble(TextAlcance.Text), 
+                    oLB.ActualizarEquipoB(Convert.ToInt64(TextIdBomba.Text), TextMarca.Text, TextModelo.Text, TextTipoBomba.Text,TextAlcance.Text, 
                         TextEstado.Text, TextPlanta.Text);
                     Response.Write("<script>alert('EQUIPO ACTUALIZADO')</script>");
                 }

@@ -90,14 +90,14 @@ namespace LayerData
             }
         }
         // METODO ACTUALIZAR USUARIO
-        public int ActualizarUsuario(Int64 IdCodigo, string Apellidos, string Nombre, DateTime FechaNacimiento, Int64 CargoEmpleado,
+        public int ActualizarUsua(Int64 IdCodigo, string Apellidos, string Nombre, DateTime FechaNacimiento, Int64 CargoEmpleado,
             double NumeroTelefono, string Email, string Planta, string UserName, string Password, string Estado)
         {
-            using (SqlConnection cnx = new SqlConnection(strconn))
+            using (SqlConnection cnxAU = new SqlConnection(strconn))
             {
                 //conexion a la base de datos
-                cnx.Open();
-                SqlCommand OrdenSql = new SqlCommand("SpEditarUsu", cnx);
+                cnxAU.Open();
+                SqlCommand OrdenSql = new SqlCommand("SpEditarUsu", cnxAU);
                 OrdenSql.CommandType = CommandType.StoredProcedure;
                 //loque se va a ejecutar para validar si no prosigue
                 try
@@ -123,8 +123,8 @@ namespace LayerData
                 finally
                 {
                     //se cierra la conexion a la BD 
-                    cnx.Close();
-                    cnx.Dispose();
+                    cnxAU.Close();
+                    cnxAU.Dispose();
                     OrdenSql.Dispose();
                 }
             }
@@ -200,7 +200,7 @@ namespace LayerData
         }
 
         //metodo  Insertar EquipoBombeo para enlazar con el stor procidios
-        public int InsertarEquipoBombeo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance, string Planta, string Estado)
+        public int InsertarEquipoBombeo(Int64 IdBomba, string Marca, string Modelo, string TipoBomba, string Alcance, string Planta, string Estado)
         {
             using (SqlConnection cnxEB = new SqlConnection(strconn))
             {
@@ -263,7 +263,7 @@ namespace LayerData
             }
         }
         // Metodo Actualizar Equipo
-        public int ActualizarEquipo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance,string Planta,string Estado)
+        public int ActualizarEquipo(Int64 IdBomba, string Marca, string Modelo, string TipoBomba, string Alcance, string Planta,string Estado)
         {
             using (SqlConnection cnxAE = new SqlConnection(strconn))
             {

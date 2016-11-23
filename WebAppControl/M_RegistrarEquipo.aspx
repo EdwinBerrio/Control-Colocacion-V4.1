@@ -60,9 +60,9 @@
                         <div class="form-group">
                             <asp:DropDownList ID="TextTipoBomba" runat="server" CssClass="form-control">
                                 <asp:ListItem Text=" " Value=" " />
-                                    <asp:ListItem Text="AUTOBOMBA" Value="1001" />
-                                    <asp:ListItem Text="ESTACIONARIA TIRO" Value="1002" />
-                                    <asp:ListItem Text="ESTACIONARIA MONTADA" Value="1003" />
+                                    <asp:ListItem Text="AUTOBOMBA" Value="101" />
+                                    <asp:ListItem Text="ESTACIONARIA MONTADA" Value="102" />
+                                    <asp:ListItem Text="ESTACIONARIA TIRO" Value="103" />
                             </asp:DropDownList>
                         </div><!--Fin-->
                         <!--Inicio-->
@@ -72,13 +72,13 @@
                         <div class="form-group">
                             <asp:TextBox ID="TextAlcance" runat="server" CssClass="form-control"></asp:TextBox>
                         </div><!--Fin-->
-                        <!--Inicio-->
+                        <%--<!--Inicio-->
                         <div class="form-group">
                             <label>PENDIENTE</label>
                         </div>
                         <div class="form-group">
                             <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control"></asp:TextBox>
-                        </div><!--Fin-->
+                        </div><!--Fin-->--%>
                          <!--Inicio-->
                         <div class="form-group">
                             <label>ASIGNADO A PLANTA</label>
