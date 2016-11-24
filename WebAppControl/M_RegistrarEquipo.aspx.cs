@@ -9,7 +9,7 @@ namespace WebAppControl
 {
     public partial class M_RegistrarEquipo : System.Web.UI.Page
     {
-        LayerBussinnes.LayerBusinnesControl oLBE = new LayerBussinnes.LayerBusinnesControl();
+        LayerBussinnes.LayerBusinnesControl oLB = new LayerBussinnes.LayerBusinnesControl();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -25,20 +25,20 @@ namespace WebAppControl
             {
                 try
                 {
-                    oLBE.InsertarEquipoBom(Convert.ToInt64(TextCodigoBomba.Text), TextMarca.Text, TextModelo.Text, TextTipoBomba.Text,
-                        TextAlcance.Text, TextEstado.Text, TextPlanta.Text);
+                    oLB.InsertarEquipoBombeo(Convert.ToInt64(TextCodigoBomba.Text), TextMarca.Text, Convert.ToDouble(TextModelo.Text), Convert.ToInt64(TextTipoBomba.Text), Convert.ToDouble(TextAlcance.Text), TextEstado.Text, TextPlanta.Text);
 
-                    Response.Write("<script>alert('REGISTRO CORRECTO')</script>");
+                    Response.Write("<script>alert('EQUIPO INGRESADO CORRECTAMENTE')</script>");
                 }
-                catch 
+                catch (Exception)
                 {
-                    Response.Write("<script>alert('REGISTRO NO A SIDO GUARDADO')</script>");
+                    Response.Write("<script>alert('EQUIPO NO INGRESADO ')</script>");
                 }
                 finally
                 {
-                    oLBE = null;
+                    oLB = null;
                 }
             }
+
         }
 
         protected void BtnCancelar_Click(object sender, EventArgs e)

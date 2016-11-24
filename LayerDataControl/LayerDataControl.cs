@@ -23,7 +23,7 @@ namespace LayerData
 
         //metodo  insertar empleado para enlazar con el stor procidios
         public int InsertarUsuario(Int64 IdCodigo, string Apellidos, string Nombre, DateTime FechaNacimiento, Int64 CargoEmpleado,
-            double NumeroTelefono, string Email, string Planta,string UserName, string Password,string Estado)
+            double NumeroTelefono, string Email, string Planta, string UserName, string Password, string Estado)
         {
             using (SqlConnection cnx = new SqlConnection(strconn))
             {
@@ -200,7 +200,7 @@ namespace LayerData
         }
 
         //metodo  Insertar EquipoBombeo para enlazar con el stor procidios
-        public int InsertarEquipoBombeo(Int64 IdBomba, string Marca, string Modelo, string TipoBomba, string Alcance, string Planta, string Estado)
+        public int InsertarEquipoBombeo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance, string Estado, string Planta)
         {
             using (SqlConnection cnxEB = new SqlConnection(strconn))
             {
@@ -216,8 +216,8 @@ namespace LayerData
                     OrdenSql.Parameters.AddWithValue("@Modelo", Modelo);
                     OrdenSql.Parameters.AddWithValue("@TipoBomba", TipoBomba);
                     OrdenSql.Parameters.AddWithValue("@Alcance", Alcance);
-                    OrdenSql.Parameters.AddWithValue("@Planta", Planta);
                     OrdenSql.Parameters.AddWithValue("@Estado", Estado);
+                    OrdenSql.Parameters.AddWithValue("@Planta", Planta);
 
                     return OrdenSql.ExecuteNonQuery();
                 }
@@ -234,9 +234,10 @@ namespace LayerData
                 }
             }
         }
-    
-    // Metodo MostrarProduccion() para enlazar con el SP.
-    public DataTable MostrarEquipoBombeo()
+        
+
+        // Metodo MostrarProduccion() para enlazar con el SP.
+        public DataTable MostrarEquipoBombeo()
         {
             using (SqlConnection cnxME = new SqlConnection(strconn))
             {
@@ -263,13 +264,13 @@ namespace LayerData
             }
         }
         // Metodo Actualizar Equipo
-        public int ActualizarEquipo(Int64 IdBomba, string Marca, string Modelo, string TipoBomba, string Alcance, string Planta,string Estado)
+        public int ActualizarEquipoBombeo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance, string Estado, string Planta)
         {
-            using (SqlConnection cnxAE = new SqlConnection(strconn))
+            using (SqlConnection cnxEB = new SqlConnection(strconn))
             {
                 //conexion a la base de datos
-                cnxAE.Open();
-                SqlCommand OrdenSql = new SqlCommand("SpActualiEquipo", cnxAE);
+                cnxEB.Open();
+                SqlCommand OrdenSql = new SqlCommand("SpActualiEquipo", cnxEB);
                 OrdenSql.CommandType = CommandType.StoredProcedure;
                 //loque se va a ejecutar para validar si no prosigue
                 try
@@ -279,8 +280,8 @@ namespace LayerData
                     OrdenSql.Parameters.AddWithValue("@Modelo", Modelo);
                     OrdenSql.Parameters.AddWithValue("@TipoBomba", TipoBomba);
                     OrdenSql.Parameters.AddWithValue("@Alcance", Alcance);
-                    OrdenSql.Parameters.AddWithValue("@Planta", Planta);
                     OrdenSql.Parameters.AddWithValue("@Estado", Estado);
+                    OrdenSql.Parameters.AddWithValue("@Planta", Planta);
 
                     return OrdenSql.ExecuteNonQuery();
                 }
@@ -291,12 +292,46 @@ namespace LayerData
                 finally
                 {
                     //se cierra la conexion a la BD 
-                    cnxAE.Close();
-                    cnxAE.Dispose();
+                    cnxEB.Close();
+                    cnxEB.Dispose();
                     OrdenSql.Dispose();
                 }
             }
         }
+        //public int ActualizarEquipo(Int64 IdBomba, string Marca, string Modelo, string TipoBomba, string Alcance, string Planta, string Estado)
+        //{
+        //    using (SqlConnection cnxAE = new SqlConnection(strconn))
+        //    {
+        //        //conexion a la base de datos
+        //        cnxAE.Open();
+        //        SqlCommand OrdenSql = new SqlCommand("SpActualiEquipo", cnxAE);
+        //        OrdenSql.CommandType = CommandType.StoredProcedure;
+        //        //loque se va a ejecutar para validar si no prosigue
+        //        try
+        //        {
+        //            OrdenSql.Parameters.AddWithValue("@IdBomba", IdBomba);
+        //            OrdenSql.Parameters.AddWithValue("@Marca", Marca);
+        //            OrdenSql.Parameters.AddWithValue("@Modelo", Modelo);
+        //            OrdenSql.Parameters.AddWithValue("@TipoBomba", TipoBomba);
+        //            OrdenSql.Parameters.AddWithValue("@Alcance", Alcance);
+        //            OrdenSql.Parameters.AddWithValue("@Planta", Planta);
+        //            OrdenSql.Parameters.AddWithValue("@Estado", Estado);
+
+        //            return OrdenSql.ExecuteNonQuery();
+        //        }
+        //        catch (Exception)
+        //        {
+        //            throw;
+        //        }
+        //        finally
+        //        {
+        //            //se cierra la conexion a la BD 
+        //            cnxAE.Close();
+        //            cnxAE.Dispose();
+        //            OrdenSql.Dispose();
+        //        }
+        //    }
+        //}
         ////Metodo SpBuscar Usuario() para enlazar con el SP.
         //public DataSet ActualBuscarUsuario(Int64 BIdCodigo)
         //{
@@ -374,5 +409,5 @@ namespace LayerData
         //}
 
         //}
-    }
+    }  
 }

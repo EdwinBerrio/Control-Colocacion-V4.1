@@ -26,22 +26,17 @@ namespace WebAppControl
             SqlDataReader leer = comando.ExecuteReader();
             if (leer.Read() == true)
             {
-                Response.Write("<script>alert('EQUIPO ES CORRECTO')</script>");
-                //TextCodigoBomb.Text = leer["CodigoBomb"].ToString();
                 TextIdBomba.Text = leer["IdBomba"].ToString();
-                TextEstado.Text = leer["Estado"].ToString();
                 TextModelo.Text = leer["Modelo"].ToString();
                 TextMarca.Text = leer["Marca"].ToString();
                 TextTipoBomba.Text = leer["TipoBomba"].ToString();
                 TextAlcance.Text = leer["Alcance"].ToString();
                 //TextBox4.Text = "";
+                TextEstado.Text = leer["Estado"].ToString();
                 TextPlanta.Text = leer["Planta"].ToString();
-
-
             }
             else
             {
-                Response.Write("<script>alert('USUARIO NO ES CORRECTO')</script>");
                 TextCodigoBomb.Text = "";
                 TextIdBomba.Text = "";
                 TextEstado.SelectedIndex = 0;
@@ -51,6 +46,7 @@ namespace WebAppControl
                 TextAlcance.Text = "";
                 TextBox4.Text = "";
                 TextPlanta.SelectedIndex = 0;
+                Response.Write("<script>alert('USUARIO NO ES CORRECTO')</script>");
             }
         }
        
@@ -64,13 +60,12 @@ namespace WebAppControl
             {
                 try
                 {
-                    oLB.ActualizarEquipoB(Convert.ToInt64(TextIdBomba.Text), TextMarca.Text, TextModelo.Text, TextTipoBomba.Text,TextAlcance.Text, 
-                        TextEstado.Text, TextPlanta.Text);
-                    Response.Write("<script>alert('EQUIPO ACTUALIZADO')</script>");
+                    oLB.ActuaEquipoBombeo(Convert.ToInt64(TextIdBomba.Text), TextMarca.Text, Convert.ToDouble(TextModelo.Text), Convert.ToInt64(TextTipoBomba.Text), Convert.ToDouble(TextAlcance.Text), TextEstado.Text, TextPlanta.Text);
+                    Response.Write("<script>alert('EQUIPO ACTUALIZADO CORRECTAMENTE')</script>");
                 }
-                catch
+                catch (Exception)
                 {
-                    Response.Write("<script>alert('REGISTRO INCORRECTO')</script>");
+                    Response.Write("<script>alert('EQUIPO  NO ACTUALIZADO')</script>");
                 }
                 finally
                 {

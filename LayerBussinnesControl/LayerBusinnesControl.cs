@@ -107,11 +107,11 @@ namespace LayerBussinnes
 
         //metodo que reciba los parametros y se los pase a star procidius
         // Metodo Insertar Produccion instanciar los parametros a la clase layer data
-       public int InsertarEquipoBom(Int64 IdBomba, string Marca, string Modelo, string TipoBomba, string Alcance, string Planta, string Estado)
+        public int InsertarEquipoBombeo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance, string Estado, string Planta)
         {
             try
             {
-                return DAle.InsertarEquipoBombeo(IdBomba, Marca, Modelo, TipoBomba, Alcance, Planta, Estado);
+                return DAle.InsertarEquipoBombeo(IdBomba, Marca, Modelo, TipoBomba, Alcance, Estado, Planta);
             }
             catch (Exception)
             {
@@ -122,9 +122,8 @@ namespace LayerBussinnes
                 DAle = null;
             }
         }
-        
 
-        //public int BuscarEquipoBombeo() //Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance
+                //public int BuscarEquipoBombeo() //Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance
         //{
         //    try
         //    {
@@ -157,11 +156,11 @@ namespace LayerBussinnes
             }
         }
         // Metodo Actualizar Equipo
-        public int ActualizarEquipoB(Int64 IdBomba, string Marca, string Modelo, string TipoBomba, string Alcance, string Estados, string Planta)
+        public int ActuaEquipoBombeo(Int64 IdBomba, string Marca, double Modelo, Int64 TipoBomba, double Alcance, string Estado, string Planta)
         {
             try
             {
-                return DAle.ActualizarEquipo(IdBomba, Marca, Modelo, TipoBomba, Alcance, Estados, Planta);// Retorna a LayerData
+                return DAle.ActualizarEquipoBombeo(IdBomba, Marca, Modelo, TipoBomba, Alcance, Estado, Planta);
             }
             catch (Exception)
             {

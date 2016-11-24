@@ -22,13 +22,13 @@ namespace WebAppControl {
         protected global::System.Web.UI.WebControls.TextBox TextCodigoBomba;
         
         /// <summary>
-        /// Control TextEstado.
+        /// Control TextMarca.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList TextEstado;
+        protected global::System.Web.UI.WebControls.TextBox TextMarca;
         
         /// <summary>
         /// Control TextModelo.
@@ -38,15 +38,6 @@ namespace WebAppControl {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextModelo;
-        
-        /// <summary>
-        /// Control TextMarca.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextMarca;
         
         /// <summary>
         /// Control TextTipoBomba.
@@ -65,6 +56,24 @@ namespace WebAppControl {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextAlcance;
+        
+        /// <summary>
+        /// Control TextEstado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList TextEstado;
+        
+        /// <summary>
+        /// Control TextBox4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox4;
         
         /// <summary>
         /// Control TextPlanta.
