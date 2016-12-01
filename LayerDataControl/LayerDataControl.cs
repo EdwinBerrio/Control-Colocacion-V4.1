@@ -298,40 +298,49 @@ namespace LayerData
                 }
             }
         }
-        //public int ActualizarEquipo(Int64 IdBomba, string Marca, string Modelo, string TipoBomba, string Alcance, string Planta, string Estado)
-        //{
-        //    using (SqlConnection cnxAE = new SqlConnection(strconn))
-        //    {
-        //        //conexion a la base de datos
-        //        cnxAE.Open();
-        //        SqlCommand OrdenSql = new SqlCommand("SpActualiEquipo", cnxAE);
-        //        OrdenSql.CommandType = CommandType.StoredProcedure;
-        //        //loque se va a ejecutar para validar si no prosigue
-        //        try
-        //        {
-        //            OrdenSql.Parameters.AddWithValue("@IdBomba", IdBomba);
-        //            OrdenSql.Parameters.AddWithValue("@Marca", Marca);
-        //            OrdenSql.Parameters.AddWithValue("@Modelo", Modelo);
-        //            OrdenSql.Parameters.AddWithValue("@TipoBomba", TipoBomba);
-        //            OrdenSql.Parameters.AddWithValue("@Alcance", Alcance);
-        //            OrdenSql.Parameters.AddWithValue("@Planta", Planta);
-        //            OrdenSql.Parameters.AddWithValue("@Estado", Estado);
 
-        //            return OrdenSql.ExecuteNonQuery();
-        //        }
-        //        catch (Exception)
-        //        {
-        //            throw;
-        //        }
-        //        finally
-        //        {
-        //            //se cierra la conexion a la BD 
-        //            cnxAE.Close();
-        //            cnxAE.Dispose();
-        //            OrdenSql.Dispose();
-        //        }
-        //    }
-        //}
+        // METODO INSERTAR PRODUCCION
+        public int InsertarProduccion(Int64 IdReport, double IdOperar, DateTime FechaServici, string TipoBomb, double CodigoBomb, String NombreObr, string NumeroPedid, 
+            double MetrosColocado,double MetrosTuberia, DateTime HoraInici, DateTime HoraFin, DateTime FechaFinal)
+        {
+            using (SqlConnection cnxp = new SqlConnection(strconn))
+            {
+                //conexion a la base de datos
+                cnxp.Open();
+                SqlCommand OrdenSql = new SqlCommand("SPInsertarProduccion", cnxp);
+                OrdenSql.CommandType = CommandType.StoredProcedure;
+                //loque se va a ejecutar para validar si no prosigue
+                try
+                {
+                    //OrdenSql.Parameters.AddWithValue("@IdReporte",IdReport);
+                    OrdenSql.Parameters.AddWithValue("@IdReporte", IdReport);
+                    OrdenSql.Parameters.AddWithValue("@IdOperario", IdOperar);
+                    OrdenSql.Parameters.AddWithValue("@FechaServicio", FechaServici);
+                    OrdenSql.Parameters.AddWithValue("@TipoBomba", TipoBomb);
+                    OrdenSql.Parameters.AddWithValue("@CodigoBomba", CodigoBomb);
+                    OrdenSql.Parameters.AddWithValue("@NombreObra", NombreObr);
+                    OrdenSql.Parameters.AddWithValue("@NumeroPedido", NumeroPedid);
+                    OrdenSql.Parameters.AddWithValue("@MetrosColocados", MetrosColocado);
+                    OrdenSql.Parameters.AddWithValue("@MetrosTuberia", MetrosTuberia);
+                    OrdenSql.Parameters.AddWithValue("@HoraInicio", HoraInici);
+                    OrdenSql.Parameters.AddWithValue("@HoraFin", HoraFin);
+                    OrdenSql.Parameters.AddWithValue("@FechaFinal", FechaFinal);
+
+                    return OrdenSql.ExecuteNonQuery();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                finally
+                {
+                    //se cierra la conexion a la BD 
+                    cnxp.Close();
+                    cnxp.Dispose();
+                    OrdenSql.Dispose();
+                }
+            }
+        }
         ////Metodo SpBuscar Usuario() para enlazar con el SP.
         //public DataSet ActualBuscarUsuario(Int64 BIdCodigo)
         //{
@@ -372,42 +381,40 @@ namespace LayerData
         //   }
         //}
 
-        //public DataSet ConsultaProduccionXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
-        //{
-        //    using (SqlConnection cnx = new SqlConnection(strconn))
-        //    {
-        //        cnx.Open();
-        //        SqlCommand com = new SqlCommand("SpConsultaProduccionXusuario", cnx);
-        //        com.CommandType = CommandType.StoredProcedure;
-        //        com.Parameters.AddWithValue("@IdOperario", PIdOperario);
-        //        com.Parameters.AddWithValue("@FechaServicio", PFechaServicio);
-        //        com.Parameters.AddWithValue("@FechaFinal", PFechaFinal);
-        //        SqlDataAdapter ad = new SqlDataAdapter(com);
+        public DataTable ConsultaProduccion(Int64 IdOperario, Int64 CodigoBomba, DateTime FechaServicio, DateTime FechaFinal)
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection cnx = new SqlConnection(strconn))
+            {
+                cnx.Open();
+                SqlCommand com = new SqlCommand("SpConsultaProduccion", cnx);
+                com.CommandType = CommandType.StoredProcedure;
+                com.Parameters.AddWithValue("@IdOperario", IdOperario);
+                com.Parameters.AddWithValue("@CodigoBomba", CodigoBomba);
+                com.Parameters.AddWithValue("@FechaServicio", FechaServicio);
+                com.Parameters.AddWithValue("@FechaFinal", FechaFinal);
+                SqlDataAdapter ad = new SqlDataAdapter(com);
+                //DataSet d = new DataSet();
+                try
+                {
+                    ad.Fill(dt);
+                    return dt;
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                finally
+                {
+                    cnx.Close();
+                    cnx.Dispose();
+                    com.Dispose();
+                    dt.Dispose();
+                }
 
+                //return d;
+            }
+        }
 
-        //        DataSet d = new DataSet();
-
-        //        try
-        //        {
-        //            ad.Fill(d);
-        //            return d;
-        //        }
-        //        catch (Exception)
-        //        {
-        //            throw;
-        //        }
-        //        finally
-        //        {
-        //            cnx.Close();
-        //            cnx.Dispose();
-        //            com.Dispose();
-        //            d.Dispose();
-        //        }
-
-        //        //return d;
-        //    }
-        //}
-
-        //}
-    }  
-}
+    }
+}  

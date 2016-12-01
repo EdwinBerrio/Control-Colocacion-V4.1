@@ -253,7 +253,9 @@
     <Content Include="M_ActualizarUsuario.aspx" />
     <Content Include="M_ActuElimUsuario.aspx" />
     <Content Include="M_InsetarPlanta.aspx" />
+    <Content Include="M_Produccion.aspx" />
     <Content Include="M_RegistrarEquipo.aspx" />
+    <Content Include="M_RegistrarProduccion.aspx" />
     <Content Include="M_RegistrarUsuario.aspx" />
     <Content Include="M_UsuariosRegistrados.aspx" />
     <Content Include="packages.config" />
@@ -358,12 +360,26 @@
     <Compile Include="M_InsetarPlanta.aspx.designer.cs">
       <DependentUpon>M_InsetarPlanta.aspx</DependentUpon>
     </Compile>
+    <Compile Include="M_Produccion.aspx.cs">
+      <DependentUpon>M_Produccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="M_Produccion.aspx.designer.cs">
+      <DependentUpon>M_Produccion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="M_RegistrarEquipo.aspx.cs">
       <DependentUpon>M_RegistrarEquipo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="M_RegistrarEquipo.aspx.designer.cs">
       <DependentUpon>M_RegistrarEquipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="M_RegistrarProduccion.aspx.cs">
+      <DependentUpon>M_RegistrarProduccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="M_RegistrarProduccion.aspx.designer.cs">
+      <DependentUpon>M_RegistrarProduccion.aspx</DependentUpon>
     </Compile>
     <Compile Include="M_RegistrarUsuario.aspx.cs">
       <DependentUpon>M_RegistrarUsuario.aspx</DependentUpon>

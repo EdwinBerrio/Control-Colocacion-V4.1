@@ -77,8 +77,20 @@
                     </li>
                     <li>
                         <a href="M_ActualizarUsuario.aspx">
-                            <i class="glyphicon glyphicon-home"></i>
+                            <i class="fa fa-th"></i>
                             <span>Actualizar Usuarios</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="M_Produccion.aspx">
+                            <i class="fa fa-th"></i>
+                            <span>Servicios Reportados</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="M_RegistrarProduccion.aspx">
+                           <i class="fa fa-th"></i>
+                            <span>Registrar Servicio De Bombeo</span>
                         </a>
                     </li>
                 </ul>

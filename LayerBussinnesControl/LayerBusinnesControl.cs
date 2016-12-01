@@ -71,11 +71,12 @@ namespace LayerBussinnes
         // Metodo Insertar Produccion instanciar los parametros a la clase layer data
         //public int InsertarProduccion(Int64 IdReporte, DateTime FechaServicio, string TipoBomba, string NombreObra, string NumeroPedido, double MetrosColocados, DateTime HoraInicio, DateTime HoraFin)
 
-        public int InsertarProduccion(Int64 IdReporte,double IdOperario, DateTime FechaServicio, string TipoBomba,double CodigoBomba, string NombreObra, string NumeroPedido , double MetrosColocados, DateTime HoraInicio, DateTime HoraFin, DateTime FechaFinal)
+        public int InsertarProduccion(Int64 IdReporte,double IdOperario, DateTime FechaServicio, string TipoBomba,double CodigoBomba, string NombreObra, string NumeroPedido , 
+            double MetrosColocados,double MetrosTuberia, DateTime HoraInicio, DateTime HoraFin, DateTime FechaFinal)
         {
             try
             {
-                return DAle.InsertarProduccion(IdReporte,IdOperario,FechaServicio,TipoBomba,CodigoBomba,NombreObra,NumeroPedido,MetrosColocados,HoraInicio,HoraFin,FechaFinal);
+                return DAle.InsertarProduccion(IdReporte,IdOperario,FechaServicio,TipoBomba,CodigoBomba,NombreObra,NumeroPedido,MetrosColocados,MetrosTuberia,HoraInicio,HoraFin,FechaFinal);
             }
             catch (Exception)
             {
@@ -171,39 +172,23 @@ namespace LayerBussinnes
                 DAle = null;
             }
         }
-        ////  Metodo SpBuscar Usuario() para enlazar con el SP.
-        //public DataSet ActualBuscarUsuario(Int64 BIdCodigo)
-        //{
-        //    try
-        //    {
-        //        return DAle.ActualBuscarUsuario(BIdCodigo);
-        //    }
-        //    catch (Exception)
-        //    {
-        //        throw;
-        //    }
-        //    finally
-        //    {
-        //        DAle = null;
-        //    }
-        //}
 
-        //metodo MostrarServiciosXusuario()
-        //public DataSet ConsultaProduccionXusuario(Int64 PIdOperario, DateTime PFechaServicio, DateTime PFechaFinal)
-        //{
-        //    try
-        //    {
-        //       // return DAle.InsertarEquipoBombeo(PIdOperario, PFechaServicio, PFechaFinal);
-        //    }
-        //    catch (Exception)
-        //    {
-        //        throw;
-        //    }
-        //    finally
-        //    {
-        //        DAle = null;
-        //    }
-        //}
+        //metodo MostrarServicios()
+        public DataTable ConsultaProduccion1(Int64 PIdOperario, Int64 PCodigoBomba, DateTime PFechaServicio, DateTime PFechaFinal)
+        {
+            try
+            {
+                return DAle.ConsultaProduccion(PIdOperario, PCodigoBomba, PFechaServicio, PFechaFinal);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                DAle = null;
+            }
+        }
 
 
     }
