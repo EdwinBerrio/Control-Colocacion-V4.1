@@ -7,25 +7,31 @@
         <h1 style="text-align:center">ACTUALIZAR USUARIO</h1>
         </div>
     </section>
-     <div class="row"> 
-           <div align="center">
-                <table>
-                    <tr>
-                        <td>
-                            <div class="form-group">
-                                <asp:TextBox ID="TextBIdCodigo" runat="server"  CssClass="form-control"></asp:TextBox>
-                            </div>
-                        </td>   
-                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                         <td> 
-                             <div class="form-group">
-                                 <asp:Button ID="BtnBuscar" runat="server" CssClass="btn btn-primary" Text="Buscar" Width="200px" OnClick="BtnBuscar_Click"/>
-                             </div>
-                        </td>                     
-                    </tr>
-                </table>
-             </div>  
-         </div>
+     <div class="row">
+         <div class="col-md-12"><!--Damos la medidos a los formularios -->
+            <div class="box box-danger"><!--Definimos que es una caja y damoscolor-->
+              <div class="box-body"><!--Definimos el cuerpo-->
+               <div align="center">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <asp:TextBox ID="TextBIdCodigo" runat="server"  CssClass="form-control"></asp:TextBox>
+                                </div>
+                            </td>   
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                             <td> 
+                                 <div class="form-group">
+                                     <asp:Button ID="BtnBuscar" runat="server" CssClass="btn btn-primary" Text="Buscar" Width="200px" OnClick="BtnBuscar_Click"/>
+                                 </div>
+                            </td>                     
+                        </tr>
+                    </table>
+                 </div>
+               </div> 
+            </div> 
+          </div>   
+        </div>
     <section class="content">
         <div class="row">
             <!--PRIMER CUADRO-->

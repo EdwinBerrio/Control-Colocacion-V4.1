@@ -8,6 +8,7 @@
         </div>
     </section>
     <section class="content-header">
+      <div class="row">
         <div class="col-md-12"><!--Damos la medidos a los formularios -->
           <div class="box box-danger"><!--Definimos que es una caja y damoscolor-->
              <div class="box-body"><!--Definimos el cuerpo-->
@@ -69,8 +70,10 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
     <section class="content-header">
+      <div class="row">
         <div class="col-md-12"><!--Damos la medidos a los formularios -->
           <div class="box box-danger"><!--Definimos que es una caja y damoscolor-->
              <div class="box-body"><!--Definimos el cuerpo-->
@@ -103,5 +106,6 @@
              </div>
            </div>
          </div>
+       </div>
     </section>
 </asp:Content>

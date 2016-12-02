@@ -143,6 +143,9 @@ h6,
 /* All images should be responsive */
 img {
   max-width: 100% !important;
+    width: 1599px;
+    margin-right: 218px;
+    margin-top: 48px;
 }
 .sort-highlight {
   background: #f4f4f4;
