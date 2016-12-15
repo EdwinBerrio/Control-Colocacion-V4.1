@@ -17,7 +17,7 @@
                     <tr>
                         <%--<td>
                             <!--Inicio-->
-                        <div class="form-group">
+                        <div class="form-group">    
                             <label>N. Identificacion</label>
                         </div>
                         <div class="form-group">

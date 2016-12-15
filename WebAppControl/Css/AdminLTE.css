@@ -62,7 +62,7 @@ body > .header {
 /*left side - contains sidebar*/
 .left-side {
   position: absolute;
-  width: 220px;
+  width: 214px;
   top: 0;
 }
 @media screen and (min-width: 992px) {
@@ -2629,6 +2629,7 @@ Component: timeline
   -webkit-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
   box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07);
+    left: 4px;
 }
 .skin-blue .sidebar a {
   color: #555555;

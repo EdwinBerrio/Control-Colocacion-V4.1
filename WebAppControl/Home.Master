@@ -20,7 +20,7 @@
 <body class="skin-blue">
     <header class="header">
         <!--Cabecera de pagina maestra navegador-->
-        <a href="#" class="logo">Sistema Control Colocacion</a>
+        <a href="#" class="logo">S.C.C.M.</a>
         <nav class="navbar navbar-static-top" role="navigation">
             <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">         
                 <span class="icon-bar"></span>
